@@ -29,7 +29,7 @@ const NavItemsData: NavItemsDatainterface[] = [
   }, {
     name: "SERVICES",
     HashLink: "services",
-    link: "#services ",
+    link: "#services",
     icon: TiHomeOutline,
   }, {
     name: "RESUME",

@@ -1,40 +1,34 @@
 import { Link } from "gatsby"
 import React, { useEffect } from "react"
-import "twin.macro"
+
 import { NavItemsData } from "../../data/NavItemsData"
 import { useLocation } from "@reach/router"
-import { WindowLocation } from "@reach/router"
+import tw from "twin.macro"
 
-const currentTab = (location: WindowLocation<unknown>, path: string) => {
-  if (location.pathname === path) {
-    return { color: "green" }
-  } else {
-    return { color: "red" }
-  }
-}
-
-const Navbar: React.FC = ({}) => {
-  const location = useLocation()
+const Navbar: React.FC = () => {
+  const locationHis = useLocation()
 
   return (
-    <div tw="sticky top-0 w-full min-height[10vh] background-color[#171717] flex-1 md:(flex-row gap-4) flex-col items-center justify-center ">
+    <div tw="sticky top-0 w-full min-height[10vh] background-color[#171717] flex  md:(flex-row gap-4) flex-col items-center justify-center p-5">
       {NavItemsData.map((item, index) => (
-        <nav
+        <div
           key={index}
           tw="flex-initial absolute md:relative justify-center px-3 text-white"
         >
-          <Link
-            to={item.link}
-            // css={[location.pathname]}
-
-            style={currentTab(location, `${item.link}`)}
-            tw="p-3 rounded-3xl md:hover:(text-black bg-white transition-delay[0.1s]  transition-duration[0.5s])"
-          >
-            {item.name}
+          <Link to={item.link}>
+            <p
+              css={[
+                locationHis.hash === item.link
+                  ? tw`text-green-400`
+                  : tw`text-red-400`,
+              ]}
+              tw="p-3 rounded-3xl  md:hover:(text-black bg-white transition-delay[0.1s]  transition-duration[0.5s])"
+            >
+              {item.name}
+            </p>
           </Link>
-        </nav>
+        </div>
       ))}
-      <div tw="text-white text-2xl"> data is klljkl {location.pathname}</div>
     </div>
   )
 }

@@ -15,7 +15,8 @@ const Index: React.FC = () => {
       <Element name="Home" className="element">
         <HomePageSection />
       </Element>
-      <Navbar></Navbar>
+
+      <Navbar />
       <Element name="Profile" className="element">
         <ProfileSection />
       </Element>
