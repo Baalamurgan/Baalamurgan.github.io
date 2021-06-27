@@ -3,7 +3,10 @@ import "twin.macro"
 
 const HomePageSection = () => {
   return (
-    <div tw="bg-black min-height[90vh] flex flex-col items-center justify-center">
+    <div
+      id="home"
+      tw="bg-black lg:min-height[90vh] min-height[100vh] flex flex-col items-center justify-center"
+    >
       <div tw="max-w-7xl flex flex-col items-center space-y-5 p-5">
         <div tw="md:(text-6xl font-bold) text-3xl text-center text-white">
           I'M NICK BERG

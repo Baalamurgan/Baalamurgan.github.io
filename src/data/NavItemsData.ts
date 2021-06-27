@@ -14,42 +14,42 @@ const NavItemsData: NavItemsDatainterface[] = [
   {
     name: "HOME",
     HashLink: "home",
-    link: "/",
+    link: "home" || "",
     icon: TiHomeOutline,
   }, {
     name: "PROFILE",
     HashLink: "profile",
-    link: "#profile",
+    link: "profile",
     icon: AiOutlineTeam,
   }, {
     name: "PORTFOLIO",
     HashLink: "portfolio",
-    link: "#portfolio",
+    link: "portfolio",
     icon: TiHomeOutline,
   }, {
     name: "SERVICES",
     HashLink: "services",
-    link: "#services",
+    link: "services",
     icon: TiHomeOutline,
   }, {
     name: "RESUME",
     HashLink: "resume",
-    link: "#resume",
+    link: "resume",
     icon: TiHomeOutline,
   }, {
     name: "REFERENCES",
     HashLink: "references",
-    link: "#references",
+    link: "references",
     icon: TiContacts,
   }, {
     name: "SKILLS",
     HashLink: "skills",
-    link: "#skills",
+    link: "skills",
     icon: TiHomeOutline,
   }, {
     name: "CONTACT",
     HashLink: "contact",
-    link: "#contact",
+    link: "contact",
     icon: RiContactsBook2Line,
   },
 ];
