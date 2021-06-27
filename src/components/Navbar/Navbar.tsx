@@ -1,9 +1,10 @@
 import { Link } from "react-scroll"
-import React, { useEffect } from "react"
+import React, { useState } from "react"
 import { NavItemsData } from "../../data/NavItemsData"
 import { useLocation } from "@reach/router"
 import tw, { styled } from "twin.macro"
 import { FiMenu } from "react-icons/fi"
+import { FaRegWindowClose } from "react-icons/fa"
 
 const Active = styled(Link)`
   ${tw`active:(text-black bg-white)`}
@@ -13,6 +14,8 @@ const MobActive = styled(Link)`
 `
 
 const Navbar: React.FC = () => {
+  const [menu, setMenu] = useState(false)
+  const onclick = () => setMenu(!menu)
   const locationHistory = useLocation()
   return (
     <div tw="sticky top-0 z-50">
@@ -42,22 +45,29 @@ const Navbar: React.FC = () => {
           </div>
         ))}
       </div>
-      <div
-        className=""
-        tw="lg:hidden flex fixed top-0 w-full py-3 px-4 min-height[10vh] justify-end text-white bg-black"
-      >
-        <div tw="flex items-center text-center justify-center">
-          <button tw="lg:hidden">
+
+      {/* mobile */}
+      <div tw="lg:hidden flex fixed top-0 w-full py-3 px-4 min-height[10vh] justify-end text-white bg-black">
+        <div tw="z-20 flex items-center text-center justify-center">
+          <button onClick={onclick} tw="lg:hidden">
             <div tw="text-white ">
-              <FiMenu />
+              {!menu ? <FiMenu /> : <FaRegWindowClose />}
             </div>
           </button>
         </div>
-        <div tw="text-center">
-          {/* {NavItemsData.map((item, index) => (
-            <div key={index}>
+        <div
+          tw="fixed"
+          css={[
+            menu
+              ? tw`z-10 fixed translate-y-20 transition-duration[0.5s] text-center bg-black w-full flex flex-col space-y-2 p-2 right-0`
+              : tw`-right-full`,
+          ]}
+        >
+          {NavItemsData.map((item, index) => (
+            <div key={index} tw="">
               <MobActive
                 activeClass="active"
+                onClick={onclick}
                 tw=" active:bg-black cursor-pointer"
                 smooth={"easeInOutQuint"}
                 to={item.link}
@@ -65,7 +75,7 @@ const Navbar: React.FC = () => {
                 <p>{item.name}</p>
               </MobActive>
             </div>
-          ))} */}
+          ))}
         </div>
       </div>
     </div>
