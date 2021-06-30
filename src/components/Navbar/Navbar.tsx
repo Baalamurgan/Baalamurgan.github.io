@@ -7,7 +7,7 @@ import { FiMenu } from "react-icons/fi"
 import { FaRegWindowClose } from "react-icons/fa"
 
 const Active = styled(Link)`
-  ${tw`active:(text-black bg-white)`}
+  ${tw`active:(text-white bg-red-500)`}
 `
 const MobActive = styled(Link)`
   ${tw`active:(text-white bg-black)`}
@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
           >
             <Active
               activeClass="active"
-              tw=" active:bg-white cursor-pointer"
+              tw="cursor-pointer overflow-x-visible"
               smooth={"easeInOutQuint"}
               to={item.link}
             >
@@ -56,15 +56,11 @@ const Navbar: React.FC = () => {
           </button>
         </div>
         <div
-          tw="fixed"
-          css={[
-            menu
-              ? tw`z-10 fixed translate-y-20 transition-duration[0.5s] text-center bg-black w-full flex flex-col space-y-2 p-2 right-0`
-              : tw`-right-full`,
-          ]}
+          tw="z-10 fixed opacity-90 transition-duration[0.5s] rounded-2xl border-0 items-center text-center bg-black w-full flex flex-col space-y-2 p-2 "
+          css={[menu ? tw`right-0` : tw`-right-full`]}
         >
           {NavItemsData.map((item, index) => (
-            <div key={index} tw="">
+            <div key={index} tw="max-width[40vw]">
               <MobActive
                 activeClass="active"
                 onClick={onclick}

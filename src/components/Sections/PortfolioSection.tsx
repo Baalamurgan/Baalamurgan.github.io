@@ -4,7 +4,7 @@ import "twin.macro"
 const PortfolioSection = () => {
   return (
     <div tw="bg-redprimary" id="portfolio">
-      <div tw="md:(pt-20 px-40) px-5 pt-20 space-y-6 text-center items-center ">
+      <div tw="md:(pt-28 px-40) px-5 pt-20 space-y-6 text-center items-center ">
         <div tw="text-white md:text-4xl text-3xl">MY LATEST WORK</div>
         <div tw="text-gray-400">
           I'm looking to expand my portfolio while I'm on top and while I'm
