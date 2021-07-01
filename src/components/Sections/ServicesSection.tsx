@@ -9,17 +9,17 @@ const ServicesSection = () => {
       id="services"
     >
       <div tw="md:(pt-28) px-5 pt-20 space-y-6 text-center max-w-2xl  items-center">
-        <div tw="mx-auto text-center text-white md:text-4xl text-3xl">
+        <div tw="mx-auto text-center text-white px-8 md:text-4xl text-3xl">
           WHAT I'M DOING
         </div>
-        <div tw="text-center text-white">
+        <div tw="text-center text-white px-8">
           I love what I do. I take great pride in what I do. And I can't do
           something halfway, three-quarters, nine-tenths. If I'm going to do
           something, I go all the way.
         </div>
         <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[60vw] min-height[3px] min-width[60vw] background-color[aqua]"></div>
       </div>
-      <div tw="py-10 px-5 max-w-6xl text-white text-left grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
+      <div tw="py-10 px-5 max-w-6xl text-white p-8 text-left grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
         {ServicesData.map((item, index) => (
           <div
             key={index}
@@ -36,9 +36,9 @@ const ServicesSection = () => {
           </div>
         ))}
       </div>
-      <div tw="min-h-screen">
+      <div tw="min-h-screen p-5">
         <div tw="md:(pt-28) px-5 pt-20 space-y-6 text-center max-w-2xl  items-center">
-          <div tw="mx-auto text-center text-white md:text-4xl text-3xl">
+          <div tw="mx-auto text-center text-white p-8 md:text-4xl text-3xl">
             MY STRENGTHS
           </div>
           <div tw="text-center text-gray-400">
@@ -47,11 +47,31 @@ const ServicesSection = () => {
           </div>
           <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[60vw] min-height[3px] min-width[60vw] background-color[aqua]"></div>
         </div>
-        <div tw="py-32">
-          <div tw="min-height[10vw] border-t-2 border-dashed border-color[white] "></div>
-          <div tw="min-height[10vw] border-t-2 border-dashed border-color[white] "></div>
-          <div tw="min-height[10vw] border-t-2 border-dashed border-color[white] "></div>
-          <div tw="min-height[10vw] border-t-2 border-dashed border-color[white] "></div>
+        <div tw="grid grid-cols-6 pt-10">
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
+          <div tw="border-2 border-dashed border-white p-8"></div>
         </div>
       </div>
     </div>

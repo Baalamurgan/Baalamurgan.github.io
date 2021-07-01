@@ -8,6 +8,7 @@ import HomePageSection from "../components/Sections/HomePageSection"
 import ProfileSection from "../components/Sections/ProfileSection"
 import PortfolioSection from "../components/Sections/PortfolioSection"
 import ServicesSection from "../components/Sections/ServicesSection"
+import ResumeSection from "../components/Sections/ResumeSection"
 
 const Index: React.FC = () => {
   return (
@@ -25,6 +26,9 @@ const Index: React.FC = () => {
       </Element>
       <Element name="Portfolio" className="element">
         <ServicesSection />
+      </Element>
+      <Element name="Portfolio" className="element">
+        <ResumeSection />
       </Element>
 
       {/* <p tw="text-center text-2xl font-bold" > Edit page on src\pages\index.tsx </p> */}

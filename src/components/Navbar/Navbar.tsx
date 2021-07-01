@@ -4,7 +4,7 @@ import { NavItemsData } from "../../data/NavItemsData"
 import { useLocation } from "@reach/router"
 import tw, { styled } from "twin.macro"
 import { FiMenu } from "react-icons/fi"
-import { FaRegWindowClose } from "react-icons/fa"
+import { VscChromeClose } from "react-icons/vsc"
 
 const Active = styled(Link)`
   ${tw`active:(text-white bg-red-500)`}
@@ -50,8 +50,8 @@ const Navbar: React.FC = () => {
       <div tw="lg:hidden flex fixed top-0 w-full py-3 px-4 min-height[10vh] justify-end text-white bg-black">
         <div tw="z-20 flex items-center text-center justify-center">
           <button onClick={onclick} tw="lg:hidden">
-            <div tw="text-white ">
-              {!menu ? <FiMenu /> : <FaRegWindowClose />}
+            <div tw="text-white text-3xl">
+              {!menu ? <FiMenu /> : <VscChromeClose />}
             </div>
           </button>
         </div>
