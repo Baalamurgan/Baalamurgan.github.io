@@ -1,3 +1,4 @@
+import { Link } from "react-scroll"
 import React from "react"
 import "twin.macro"
 
@@ -18,9 +19,14 @@ const HomePageSection = () => {
           28 years young, husband and father, pet lover, coffee addict..
         </div>
         <div tw="flex"></div>
-        <button tw="background-color[#C80A48] rounded hover:(bg-green-700 text-white) cursor-pointer md:(text-lg max-width[204px] py-4 w-full) max-width[150px] text-xs py-3 w-full text-white font-bold">
-          KNOW ME BETTER
-        </button>
+        <Link
+          activeClass="active"
+          tw="cursor-pointer text-center overflow-x-visible background-color[#C80A48] rounded hover:(bg-green-700 text-white) md:(text-lg max-width[204px] py-4 w-full) max-width[150px] py-3 w-full text-white font-bold"
+          smooth={"easeInOutQuint"}
+          to="profile"
+        >
+          <button tw="">KNOW ME BETTER</button>
+        </Link>
       </div>
     </div>
   )

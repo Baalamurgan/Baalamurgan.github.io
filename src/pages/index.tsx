@@ -4,12 +4,15 @@ import Seo from "../components/seo"
 import { Element } from "react-scroll"
 import "twin.macro"
 import Navbar from "../components/Navbar/Navbar"
+import Footer from "../components/Footer/Footer"
 import HomePageSection from "../components/Sections/HomePageSection"
 import ProfileSection from "../components/Sections/ProfileSection"
 import PortfolioSection from "../components/Sections/PortfolioSection"
 import ServicesSection from "../components/Sections/ServicesSection"
 import ResumeSection from "../components/Sections/ResumeSection"
 import ReferencesSection from "../components/Sections/ReferencesSection"
+import SkillsSection from "../components/Sections/SkillsSection"
+import ContactSection from "../components/Sections/ContactSection"
 
 const Index: React.FC = () => {
   return (
@@ -34,8 +37,13 @@ const Index: React.FC = () => {
       <Element name="references" className="element">
         <ReferencesSection />
       </Element>
-
-      {/* <p tw="text-center text-2xl font-bold" > Edit page on src\pages\index.tsx </p> */}
+      <Element name="skills" className="element">
+        <SkillsSection />
+      </Element>
+      <Element name="contact" className="element">
+        <ContactSection />
+      </Element>
+      <Footer />
     </Layout>
   )
 }

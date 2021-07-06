@@ -6,7 +6,10 @@ import { ReferencesData } from "../../data/ReferencesData"
 
 const ReferencesSection = () => {
   return (
-    <div tw="bg-redprimary min-h-screen flex flex-col items-center" id="resume">
+    <div
+      tw="bg-redprimary min-h-screen flex flex-col items-center"
+      id="references"
+    >
       <div tw="md:(pt-28) px-5 pt-20 space-y-4 text-center max-w-2xl  items-center">
         <div tw="mx-auto text-center text-white md:text-4xl text-3xl">
           REFERENCES
@@ -25,7 +28,7 @@ const ReferencesSection = () => {
           autoPlay
           showIndicators={false}
           showArrows={false}
-          interval={10000}
+          interval={5000}
         >
           {ReferencesData.map(
             ({ photo, company, description, name, role }, index) => (

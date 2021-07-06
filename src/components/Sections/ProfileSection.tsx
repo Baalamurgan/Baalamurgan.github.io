@@ -2,6 +2,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import "twin.macro"
 import { ContactData } from "../../data/ContactData"
+import { Link } from "react-scroll"
 
 const ProfileSection = () => {
   return (
@@ -39,9 +40,16 @@ const ProfileSection = () => {
               </div>
             </div>
             <div tw="flex justify-center items-center text-center">
-              <button tw="md:p-3 p-2 rounded bg-pink-600 text-black hover:(bg-green-500 text-white transition-duration[0.2s])">
-                RESUME
-              </button>
+              <Link
+                activeClass="active"
+                tw="cursor-pointer overflow-x-visible"
+                smooth={"easeInOutQuint"}
+                to="resume"
+              >
+                <button tw="md:p-3 p-2 rounded bg-pink-600 text-black hover:(bg-green-500 text-white transition-duration[0.2s])">
+                  RESUME
+                </button>
+              </Link>
             </div>
           </div>
         </div>

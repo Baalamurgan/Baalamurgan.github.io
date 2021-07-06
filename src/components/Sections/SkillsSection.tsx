@@ -1,8 +1,9 @@
 import React from "react"
+import "twin.macro"
 
 const SkillsSection = () => {
   return (
-    <div tw="bg-redprimary min-h-screen flex flex-col items-center" id="resume">
+    <div tw="bg-redprimary min-h-screen flex flex-col items-center" id="skills">
       <div tw="md:(pt-28) px-5 pt-20 space-y-4 text-center max-w-2xl  items-center">
         <div tw="mx-auto text-center text-white md:text-4xl text-3xl">
           SKILLS & EXPERTISE
