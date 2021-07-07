@@ -3,6 +3,7 @@ import "twin.macro"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from "react-responsive-carousel"
 import { ReferencesData } from "../../data/ReferencesData"
+import Zoom from "react-reveal/Zoom"
 
 const ReferencesSection = () => {
   return (
@@ -17,7 +18,9 @@ const ReferencesSection = () => {
         <div tw="text-center text-gray-400 italic">
           Testimonials are enough to convince people for now.
         </div>
-        <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[20vw] min-height[3px] min-width[20vw] background-color[aqua]"></div>
+        <Zoom>
+          <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[20vw] min-height[3px] min-width[20vw] background-color[aqua]"></div>
+        </Zoom>
       </div>
       <div tw="hidden md:(grid px-32 mt-10)">
         <Carousel
@@ -52,33 +55,37 @@ const ReferencesSection = () => {
 
       {/* mobile */}
       <div tw="md:hidden mt-10">
-        <Carousel
-          //i tried this
-          infiniteLoop
-          useKeyboardArrows
-          autoPlay
-          showIndicators={false}
-          showArrows={false}
-          showThumbs
-          showStatus={false}
-          interval={10000}
-          tw="max-width[300px]"
-        >
-          {ReferencesData.map(
-            ({ photo, company, description, name, role }, index) => (
-              <div tw="grid space-y-2 text-center text-white" key={index}>
-                <img src={photo} height="2px" width="2px" />
-                <div tw="flex flex-col">
-                  <div tw="">{company}</div>
-                  <div tw="mx-auto max-height[3px] max-width[20vw] min-height[3px] min-width[20vw] background-color[aqua]"></div>
-                  <div tw="italic mx-auto">{description}</div>
-                  <div tw="italic underline">{name}</div>
-                  <div tw="italic text-gray-400">{role}</div>
+        <Zoom>
+          <Carousel
+            //i tried this
+            infiniteLoop
+            useKeyboardArrows
+            autoPlay
+            showIndicators={false}
+            showArrows={false}
+            showThumbs
+            showStatus={false}
+            interval={10000}
+            tw="max-width[300px]"
+          >
+            {ReferencesData.map(
+              ({ photo, company, description, name, role }, index) => (
+                <div tw="grid space-y-2 text-center text-white" key={index}>
+                  <img src={photo} height="2px" width="2px" />
+                  <div tw="flex flex-col">
+                    <div tw="">{company}</div>
+                    <Zoom>
+                      <div tw="mx-auto max-height[3px] max-width[20vw] min-height[3px] min-width[20vw] background-color[aqua]"></div>
+                    </Zoom>
+                    <div tw="italic mx-auto">{description}</div>
+                    <div tw="italic underline">{name}</div>
+                    <div tw="italic text-gray-400">{role}</div>
+                  </div>
                 </div>
-              </div>
-            )
-          )}
-        </Carousel>
+              )
+            )}
+          </Carousel>
+        </Zoom>
       </div>
     </div>
   )

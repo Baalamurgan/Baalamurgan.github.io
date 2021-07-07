@@ -1,6 +1,8 @@
 import React from "react"
 import "twin.macro"
 import { ServicesData } from "../../data/ServicesData"
+import Bounce from "react-reveal/Bounce"
+import Zoom from "react-reveal/Zoom"
 
 const ServicesSection = () => {
   return (
@@ -17,7 +19,9 @@ const ServicesSection = () => {
           something halfway, three-quarters, nine-tenths. If I'm going to do
           something, I go all the way.
         </div>
-        <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[60vw] min-height[3px] min-width[60vw] background-color[aqua]"></div>
+        <Zoom>
+          <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[60vw] min-height[3px] min-width[60vw] background-color[aqua]"></div>
+        </Zoom>
       </div>
       <div tw="py-10 px-5 max-w-6xl text-white p-8 text-left grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
         {ServicesData.map((item, index) => (
@@ -25,14 +29,16 @@ const ServicesSection = () => {
             key={index}
             tw="space-y-4 p-5 odd:(bg-black) odd:hover:bg-gray-700 even:background-color[#0D0C0D] even:hover:bg-gray-700"
           >
-            <div tw="color[aqua] font-bold text-2xl">
-              <item.icon />
-            </div>
-            <div tw="flex">
-              {index + 1}. {item.name}
-            </div>
-            <div tw="md:(max-height[4px] max-width[30px] min-height[4px] min-width[30px]) max-height[3px] max-width[20px] min-height[3px] min-width[20px] background-color[aqua]"></div>
-            <div tw="flex justify-center">{item.description}</div>
+            <Bounce cascade>
+              <div tw="color[aqua] font-bold text-2xl">
+                <item.icon />
+              </div>
+              <div tw="flex">
+                {index + 1}. {item.name}
+              </div>
+              <div tw="md:(max-height[4px] max-width[30px] min-height[4px] min-width[30px]) max-height[3px] max-width[20px] min-height[3px] min-width[20px] background-color[aqua]"></div>
+              <div tw="flex justify-center">{item.description}</div>
+            </Bounce>
           </div>
         ))}
       </div>

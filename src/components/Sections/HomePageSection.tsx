@@ -25,7 +25,7 @@ const HomePageSection = () => {
           smooth={"easeInOutQuint"}
           to="profile"
         >
-          <button tw="">KNOW ME BETTER</button>
+          <button tw="focus:outline-none">KNOW ME BETTER</button>
         </Link>
       </div>
     </div>

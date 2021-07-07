@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import tw from "twin.macro"
 import { ResumeEducationData } from "../../data/ResumeData"
 import { ResumeWorkData } from "../../data/ResumeData"
+import Bounce from "react-reveal/Bounce"
+import Wobble from "react-reveal/Wobble"
 
 const ResumeSection = () => {
   return (
@@ -30,12 +32,14 @@ const ResumeSection = () => {
               tw="flex-grow text-center px-5 md:(grid grid-cols-12 gap-5) "
             >
               <div tw="relative top-3 md:hidden">
-                <span tw="col-span-3 background-color[#C80A48] height[40px] whitespace-nowrap rounded px-4 py-2 justify-items-center">
-                  {item.year}
-                </span>
+                <Wobble>
+                  <span tw="col-span-3 background-color[#C80A48] height[40px] whitespace-nowrap rounded px-4 py-2 justify-items-center">
+                    {item.year}
+                  </span>
+                </Wobble>
               </div>
               <div tw="hidden md:( visible grid col-span-3 background-color[#C80A48] height[40px] width[min-content] whitespace-nowrap rounded px-4 py-2 justify-items-start)">
-                {item.year}
+                <Wobble>{item.year}</Wobble>
               </div>
               <div tw="hidden md:(grid col-span-1 justify-items-start)">
                 <button
@@ -47,13 +51,15 @@ const ResumeSection = () => {
               </div>
               <div tw="col-span-8 border-2 border-white mb-5 justify-items-start">
                 <div tw="text-left flex flex-col p-4 space-y-3 mt-2">
-                  <div tw="lg:text-2xl">{item.title}</div>
-                  <div
-                    css={[view ? tw`` : tw`md:hidden`]}
-                    tw="color[#A1A1A1] text-sm"
-                  >
-                    {item.description}
-                  </div>
+                  <Bounce cascade>
+                    <div tw="lg:text-2xl">{item.title}</div>
+                    <div
+                      css={[view ? tw`` : tw`md:hidden`]}
+                      tw="color[#A1A1A1] text-sm"
+                    >
+                      {item.description}
+                    </div>
+                  </Bounce>
                 </div>
               </div>
             </div>
@@ -72,12 +78,14 @@ const ResumeSection = () => {
               tw="flex-grow text-center px-5 md:(grid grid-cols-12 gap-5) "
             >
               <div tw="relative top-3 md:hidden">
-                <span tw="col-span-3 background-color[#C80A48] height[40px] whitespace-nowrap rounded px-4 py-2 justify-items-center">
-                  {item.year}
-                </span>
+                <Wobble>
+                  <span tw="col-span-3 background-color[#C80A48] height[40px] whitespace-nowrap rounded px-4 py-2 justify-items-center">
+                    {item.year}
+                  </span>
+                </Wobble>
               </div>
               <div tw="hidden md:( visible grid col-span-3 background-color[#C80A48] height[40px] width[min-content] whitespace-nowrap rounded px-4 py-2 justify-items-start)">
-                {item.year}
+                <Wobble>{item.year}</Wobble>
               </div>
               <div tw="hidden md:(grid col-span-1 justify-items-start)">
                 <button
@@ -89,13 +97,15 @@ const ResumeSection = () => {
               </div>
               <div tw="col-span-8 border-2 border-white mb-5 justify-items-start">
                 <div tw="text-left flex flex-col p-4 space-y-3 mt-2">
-                  <div tw="lg:text-2xl">{item.title}</div>
-                  <div
-                    css={[view ? tw`` : tw`md:hidden`]}
-                    tw="color[#A1A1A1] text-sm"
-                  >
-                    {item.description}
-                  </div>
+                  <Bounce cascade>
+                    <div tw="lg:text-2xl">{item.title}</div>
+                    <div
+                      css={[view ? tw`` : tw`md:hidden`]}
+                      tw="color[#A1A1A1] text-sm"
+                    >
+                      {item.description}
+                    </div>
+                  </Bounce>
                 </div>
               </div>
             </div>

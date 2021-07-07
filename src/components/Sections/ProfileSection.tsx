@@ -2,6 +2,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import "twin.macro"
 import { ContactData } from "../../data/ContactData"
+import Zoom from "react-reveal/Zoom"
 import { Link } from "react-scroll"
 
 const ProfileSection = () => {
@@ -17,7 +18,9 @@ const ProfileSection = () => {
             Grand Line. Highly motivated creative developer with international
             client portfolio.
           </div>
-          <div tw="md:(max-height[6px] max-width[2vw] min-height[6px] min-width[2vw]) max-height[3px] max-width[60vw] min-height[3px] min-width[60vw] background-color[aqua]"></div>
+          <Zoom>
+            <div tw="md:(max-height[6px] max-width[2vw] min-height[6px] min-width[2vw]) max-height[3px] max-width[60vw] min-height[3px] min-width[60vw] background-color[aqua]"></div>
+          </Zoom>
           <div tw="text-gray-400">
             I currently work at Galley-La Company, where I spend most of my time
             crafting and working on awesome projects.
@@ -46,7 +49,7 @@ const ProfileSection = () => {
                 smooth={"easeInOutQuint"}
                 to="resume"
               >
-                <button tw="md:p-3 p-2 rounded bg-pink-600 text-black hover:(bg-green-500 text-white transition-duration[0.2s])">
+                <button tw="md:p-3 p-2 rounded bg-pink-600 text-black focus:outline-none hover:(bg-green-500 text-white transition-duration[0.2s])">
                   RESUME
                 </button>
               </Link>

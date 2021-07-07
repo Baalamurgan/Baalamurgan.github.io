@@ -1,5 +1,6 @@
 import React from "react"
 import "twin.macro"
+import Zoom from "react-reveal/Zoom"
 
 const ContactSection = () => {
   return (
@@ -14,35 +15,37 @@ const ContactSection = () => {
         <div tw="text-center text-gray-400 italic">
           Have a project you'd like to discuss?
         </div>
-        <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[20vw] min-height[3px] min-width[20vw] background-color[aqua]"></div>
+        <Zoom>
+          <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[20vw] min-height[3px] min-width[20vw] background-color[aqua]"></div>
+        </Zoom>
       </div>
       <div tw="grid w-full lg:px-72 md:px-40 sm:px-20 px-4 pt-10 text-gray-400">
         <form>
           <div tw="grid grid-cols-2 gap-4 w-full">
             <div tw="col-span-2 lg:col-span-1">
               <input
-                tw="bg-transparent w-full focus:(outline-none border-color[darkblue] border-2  transition-duration[0.20s]) py-1 border-gray-400 border-b-2"
+                tw="bg-transparent w-full focus:(outline-none border-color[blue] border-2  transition-duration[0.20s]) py-1 border-gray-400 border-b-2"
                 type="text"
                 placeholder="Name"
               />
             </div>
             <div tw="col-span-2 lg:col-span-1">
               <input
-                tw="bg-transparent w-full focus:(outline-none border-color[darkblue] border-2  transition-duration[0.20s]) py-1 border-gray-400 border-b-2"
+                tw="bg-transparent w-full focus:(outline-none border-color[blue] border-2  transition-duration[0.20s]) py-1 border-gray-400 border-b-2"
                 type="text"
                 placeholder="Email"
               />
             </div>
             <div tw="col-span-2">
               <input
-                tw="bg-transparent w-full focus:(outline-none border-color[darkblue] border-2  transition-duration[0.20s]) py-1 border-gray-400 border-b-2"
+                tw="bg-transparent w-full focus:(outline-none border-color[blue] border-2  transition-duration[0.20s]) py-1 border-gray-400 border-b-2"
                 type="text"
                 placeholder="Subject"
               />
             </div>
             <div tw="col-span-2">
               <textarea
-                tw="bg-transparent w-full focus:(outline-none border-color[darkblue] border-2  transition-duration[0.20s]) py-1 border-gray-400 border-b-2"
+                tw="bg-transparent w-full focus:(outline-none border-color[blue] border-2  transition-duration[0.20s]) py-1 border-gray-400 border-b-2"
                 rows={10}
                 placeholder="Message"
               />
