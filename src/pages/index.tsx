@@ -17,7 +17,7 @@ import Footer from "../components/Footer/Footer"
 const Index = () => {
   return (
     <Layout>
-      <Seo title="Home" />
+      <Seo title="Portfolio" />
       <Element name="home" className="element">
         <HomePageSection />
       </Element>
