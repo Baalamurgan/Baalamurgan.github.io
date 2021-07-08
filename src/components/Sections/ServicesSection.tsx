@@ -42,44 +42,6 @@ const ServicesSection = () => {
           </div>
         ))}
       </div>
-      <div tw="min-h-screen p-5">
-        <div tw="md:(pt-28) px-5 pt-20 space-y-6 text-center max-w-2xl  items-center">
-          <div tw="mx-auto text-center text-white p-8 md:text-4xl text-3xl">
-            MY STRENGTHS
-          </div>
-          <div tw="text-center text-gray-400">
-            Failure will never overtake me if my determination to succeed is
-            strong enough.
-          </div>
-          <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[60vw] min-height[3px] min-width[60vw] background-color[aqua]"></div>
-        </div>
-        <div tw="grid grid-cols-6 pt-10">
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-          <div tw="border-2 border-dashed border-white p-8"></div>
-        </div>
-      </div>
     </div>
   )
 }

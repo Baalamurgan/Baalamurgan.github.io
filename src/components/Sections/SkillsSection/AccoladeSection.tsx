@@ -8,11 +8,8 @@ import { IoRibbonOutline } from "react-icons/io5"
 
 const AccoladeSection = () => {
   return (
-    <div
-      tw="bg-redprimary min-height[70vh] grid sm:(flex flex-col items-center)"
-      id="knowledge"
-    >
-      <div tw="md:(pt-28 px-40) px-5 pt-10 space-y-6 text-center items-center ">
+    <div tw="bg-redprimary min-height[60vh] grid sm:(flex flex-col items-center)" id="knowledge">
+      <div tw="md:(pt-10 px-40) px-5 pt-10 space-y-6 text-center items-center ">
         <div tw="text-white md:text-4xl text-3xl">ACCOLADES</div>
         <div tw="text-gray-400 italic">
           The accolades, just like the scrapes and bruises, fade in the end, and

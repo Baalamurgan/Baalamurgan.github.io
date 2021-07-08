@@ -9,7 +9,7 @@ import { ProgressBarLine } from "react-progressbar-line"
 const KnowledgeSection = () => {
   return (
     <div
-      tw="bg-redprimary min-height[70vh] items-center justify-center"
+      tw="bg-redprimary min-height[60vh] items-center justify-center"
       id="knowledge"
     >
       <div tw="md:(pt-28 px-40) px-5 pt-10 space-y-6 text-center items-center ">

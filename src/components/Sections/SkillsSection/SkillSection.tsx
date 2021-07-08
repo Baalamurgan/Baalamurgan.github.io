@@ -11,7 +11,7 @@ import "react-circular-progressbar/dist/styles.css"
 const SkillSection = () => {
   return (
     <div
-      tw="bg-redprimary flex flex-col items-center justify-center"
+      tw="bg-redprimary min-height[60vh] flex flex-col items-center justify-center"
       id="skills"
     >
       <div tw="md:(pt-28) px-5 pt-20 space-y-4 text-center max-w-2xl  items-center">
@@ -54,7 +54,6 @@ const SkillSection = () => {
           </div>
         ))}
       </div>
-      {/* knowledge */}
     </div>
   )
 }
