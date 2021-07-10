@@ -8,7 +8,6 @@ module.exports = {
   //       "100%": { opacity: 1 },
   //     },
   //   },
-  darkMode: "class",
   theme: {
     extend: {
       colors: {

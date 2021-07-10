@@ -11,23 +11,17 @@ interface WorkprocessDatainterface {
 
 const WorkprocessData: WorkprocessDatainterface[] = [
     {
-        name: "IDEA",
+        name: "Process-1",
         icon: RiLightbulbFlashFill
     }, {
-        name: "SKETCH",
+        name: "Process-2",
         icon: FaPencilAlt
     }, {
-        name: "DESIGN",
+        name: "Process-3",
         icon: HiOutlineDesktopComputer
     }, {
-        name: "DEVOLOP",
+        name: "Process-4",
         icon: FaHtml5
-    }, {
-        name: "TEST",
-        icon: IoBugOutline
-    }, {
-        name: "LAUNCH",
-        icon: RiRocket2Line
     }
 ];
 

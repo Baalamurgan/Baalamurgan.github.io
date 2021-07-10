@@ -16,7 +16,7 @@ const ReferencesSection = () => {
           REFERENCES
         </div>
         <div tw="text-center text-gray-400 italic">
-          Testimonials are enough to convince people for now.
+          "References description"
         </div>
         <Zoom>
           <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[20vw] min-height[3px] min-width[20vw] background-color[aqua]"></div>
@@ -39,7 +39,7 @@ const ReferencesSection = () => {
                 tw="grid grid-cols-3 space-y-2 text-left text-white"
                 key={index}
               >
-                <img src={photo} height="2px" width="2px" />
+                <img src={photo} />
                 <div tw="flex flex-col col-span-2 px-10 space-y-3">
                   <div tw="text-2xl">{company}</div>
                   <div tw="max-height[6px] max-width[30px] min-height[6px] min-width[30px] background-color[aqua]"></div>
@@ -57,7 +57,6 @@ const ReferencesSection = () => {
       <div tw="md:hidden mt-10">
         <Zoom>
           <Carousel
-            //i tried this
             infiniteLoop
             useKeyboardArrows
             autoPlay
@@ -71,7 +70,7 @@ const ReferencesSection = () => {
             {ReferencesData.map(
               ({ photo, company, description, name, role }, index) => (
                 <div tw="grid space-y-2 text-center text-white" key={index}>
-                  <img src={photo} height="2px" width="2px" />
+                  <img src={photo} />
                   <div tw="flex flex-col">
                     <div tw="">{company}</div>
                     <Zoom>

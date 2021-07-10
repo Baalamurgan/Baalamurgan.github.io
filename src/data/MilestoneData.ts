@@ -12,20 +12,20 @@ interface MilestoneDatainterface {
 
 const MilestoneData: MilestoneDatainterface[] = [
     {
-        name: "CUPS OF COFFEE",
-        value: 5012,
+        name: "Milestone-1",
+        value: 111,
         icon: GiCoffeeCup
     }, {
-        name: "HOURS WORKED",
-        value: 4210,
+        name: "Milestone-2",
+        value: 222,
         icon: IoAlarmOutline
     }, {
-        name: "SUCCESSFULL PROJECTS",
-        value: 505,
+        name: "Milestone-3",
+        value: 333,
         icon: FaHtml5
     }, {
-        name: "HAPPY CLIENTS",
-        value: 253,
+        name: "Milestone-4",
+        value: 444,
         icon: FaUserCheck
     }
 ];

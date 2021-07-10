@@ -5,23 +5,23 @@ interface KnowledgeDatainterface {
 
 const KnowledgeData: KnowledgeDatainterface[] = [
     {
-        name: "BRAND MARKETING",
+        name: "Knowledge-1",
+        percent: 0,
+    }, {
+        name: "Knowledge-2",
+        percent: 20,
+    }, {
+        name: "Knowledge-3",
+        percent: 40,
+    }, {
+        name: "Knowledge-4",
         percent: 60,
     }, {
-        name: "BRAND DESIGN",
-        percent: 55,
+        name: "Knowledge-5",
+        percent: 80,
     }, {
-        name: "WEB DEVELOPMENT",
-        percent: 75,
-    }, {
-        name: "INTERNET MARKETING",
-        percent: 75,
-    }, {
-        name: "DIGITAL DESIGN",
-        percent: 65,
-    }, {
-        name: "VIDEO EDITING",
-        percent: 65,
+        name: "Knowledge-6",
+        percent: 100,
     }
 ];
 

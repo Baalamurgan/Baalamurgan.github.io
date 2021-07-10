@@ -5,23 +5,23 @@ interface SkillDatainterface {
 
 const SkillData: SkillDatainterface[] = [
     {
-        name: "HTML5 + CSS3",
-        percent: 100,
+        name: "Skill-1",
+        percent: 0,
     }, {
-        name: "ANGULAR JS",
-        percent: 60,
+        name: "Skill-2",
+        percent: 20,
     }, {
-        name: "LARAVEL",
-        percent: 50,
-    }, {
-        name: "PHOTOSHOP",
+        name: "Skill-3",
         percent: 40,
     }, {
-        name: "CINEMA 4D",
+        name: "Skill-4",
         percent: 60,
     }, {
-        name: "AFTER EFFECTS",
-        percent: 50,
+        name: "Skill-5",
+        percent: 80,
+    }, {
+        name: "Skill-6",
+        percent: 100,
     }
 ];
 

@@ -14,27 +14,27 @@ interface ServicesDatainterface {
 
 const ServicesData: ServicesDatainterface[] = [
     {
-        name: "STRATEGY",
+        name: "SERVICE-1",
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi harum nisi nobis deleniti debitis enim earum quam nesciunt excepturi architecto.",
         icon: GiChessRook,
     }, {
-        name: "BRANDING",
+        name: "SERVICE-2",
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi harum nisi nobis deleniti debitis enim earum quam nesciunt excepturi architecto.",
         icon: IoLeafOutline,
     }, {
-        name: "WEB DESIGN",
+        name: "SERVICE-3",
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi harum nisi nobis deleniti debitis enim earum quam nesciunt excepturi architecto.",
         icon: SiMaterialdesignicons,
     }, {
-        name: "SOCIAL MEDIA",
+        name: "SERVICE-4",
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi harum nisi nobis deleniti debitis enim earum quam nesciunt excepturi architecto.",
         icon: FiMessageSquare,
     }, {
-        name: "DEVELOPMENT",
+        name: "SERVICE-5",
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi harum nisi nobis deleniti debitis enim earum quam nesciunt excepturi architecto.",
         icon: MdDevices,
     }, {
-        name: "CONSULTING",
+        name: "SERVICE-6",
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi harum nisi nobis deleniti debitis enim earum quam nesciunt excepturi architecto.",
         icon: RiKakaoTalkLine,
     }
