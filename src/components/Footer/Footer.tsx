@@ -22,7 +22,7 @@ const Footer = () => {
           ))}
         </ul>
       </RubberBand>
-      <div tw="flex justify-center content-center pb-5 whitespace-nowrap">
+      <div tw="flex justify-center content-center pb-5 md:pt-5 whitespace-nowrap">
         © "Year" "Name". All rights reserved.
       </div>
     </section>

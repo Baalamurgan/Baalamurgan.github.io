@@ -22,6 +22,12 @@ const WorkprocessData: WorkprocessDatainterface[] = [
     }, {
         name: "Process-4",
         icon: FaHtml5
+    }, {
+        name: "Process-5",
+        icon: IoBugOutline
+    }, {
+        name: "Process-6",
+        icon: RiRocket2Line
     }
 ];
 
