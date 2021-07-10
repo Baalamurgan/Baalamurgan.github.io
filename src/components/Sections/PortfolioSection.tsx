@@ -1,8 +1,35 @@
 import React from "react"
 import "twin.macro"
 import Zoom from "react-reveal/Zoom"
-
+import { graphql, useStaticQuery } from "gatsby"
+import {
+  GatsbyImage,
+  getImage,
+  IGatsbyImageData,
+  ImageDataLike,
+} from "gatsby-plugin-image"
+type dataType = {
+  allPortfolioJson: {
+    nodes: {
+      images: ImageDataLike
+    }[]
+  }
+}
 const PortfolioSection = () => {
+  const data: dataType = useStaticQuery(graphql`
+    query MyQuery {
+      allPortfolioJson {
+        nodes {
+          images {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <div tw="bg-redprimary" id="portfolio">
       <div tw="md:(pt-28 px-40) px-5 pt-20 space-y-6 text-center items-center ">
@@ -16,78 +43,18 @@ const PortfolioSection = () => {
         </Zoom>
       </div>
       <div tw="m-0 p-0 w-full grid md:(grid-cols-4 m-0 p-0) grid-cols-1 sm:(grid-cols-2 m-0 p-0) ">
-        <div tw="w-full p-0 m-0">
-          <Zoom>
-            <img
-              tw="object-cover w-full hover:(opacity-50 transition-timing-function[linear] transition-duration[0.2s])"
-              src="https://fakeimg.pl/300x230/"
-              alt="projectIcon"
-            />
-          </Zoom>
-        </div>{" "}
-        <div tw="w-full object-contain p-0 m-0 hover:(opacity-50 transition-timing-function[linear] transition-duration[0.2s])">
-          <Zoom>
-            <img
-              tw="object-cover w-full"
-              src="https://fakeimg.pl/300x230/"
-              alt="projectIcon"
-            />
-          </Zoom>
-        </div>{" "}
-        <div tw="w-full object-contain p-0 m-0 hover:(opacity-50 transition-timing-function[linear] transition-duration[0.2s])">
-          <Zoom>
-            <img
-              tw="object-cover w-full"
-              src="https://fakeimg.pl/300x230/"
-              alt="projectIcon"
-            />
-          </Zoom>
-        </div>{" "}
-        <div tw="w-full object-contain p-0 m-0 hover:(opacity-50 transition-timing-function[linear] transition-duration[0.2s])">
-          <Zoom>
-            <img
-              tw="object-cover w-full"
-              src="https://fakeimg.pl/300x230/"
-              alt="projectIcon"
-            />
-          </Zoom>
-        </div>{" "}
-        <div tw="w-full object-contain p-0 m-0 hover:(opacity-50 transition-timing-function[linear] transition-duration[0.2s])">
-          <Zoom>
-            <img
-              tw="object-cover w-full"
-              src="https://fakeimg.pl/300x230/"
-              alt="projectIcon"
-            />
-          </Zoom>
-        </div>{" "}
-        <div tw="w-full object-contain p-0 m-0 hover:(opacity-50 transition-timing-function[linear] transition-duration[0.2s])">
-          <Zoom>
-            <img
-              tw="object-cover w-full"
-              src="https://fakeimg.pl/300x230/"
-              alt="projectIcon"
-            />
-          </Zoom>
-        </div>{" "}
-        <div tw="w-full object-contain p-0 m-0 hover:(opacity-50 transition-timing-function[linear] transition-duration[0.2s])">
-          <Zoom>
-            <img
-              tw="object-cover w-full"
-              src="https://fakeimg.pl/300x230/"
-              alt="projectIcon"
-            />
-          </Zoom>
-        </div>
-        <div tw="w-full object-contain p-0 m-0 hover:(opacity-50 transition-timing-function[linear] transition-duration[0.2s])">
-          <Zoom>
-            <img
-              tw="object-cover w-full"
-              src="https://fakeimg.pl/300x230/"
-              alt="projectIcon"
-            />
-          </Zoom>
-        </div>
+        {data.allPortfolioJson.nodes.map((item, index) => {
+          const image = getImage(item.images)
+          return (
+            <div tw="w-full p-0 m-0">
+              <Zoom>
+                <div tw="object-cover w-full hover:(opacity-50 transition-timing-function[linear] transition-duration[0.2s])">
+                  <GatsbyImage image={image as IGatsbyImageData} alt="photo" />
+                </div>
+              </Zoom>
+            </div>
+          )
+        })}
       </div>
     </div>
   )
