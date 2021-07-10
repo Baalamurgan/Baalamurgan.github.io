@@ -34,10 +34,7 @@ const PortfolioSection = () => {
     <div tw="bg-redprimary" id="portfolio">
       <div tw="md:(pt-28 px-40) px-5 pt-20 space-y-6 text-center items-center ">
         <div tw="text-white md:text-4xl text-3xl">MY LATEST WORK</div>
-        <div tw="text-gray-400">
-          I'm looking to expand my portfolio while I'm on top and while I'm
-          young.
-        </div>
+        <div tw="text-gray-400">"Explanation about your latest works"</div>
         <Zoom>
           <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[40px] min-height[3px] min-width[40px] background-color[aqua]"></div>
         </Zoom>
@@ -46,7 +43,7 @@ const PortfolioSection = () => {
         {data.allPortfolioJson.nodes.map((item, index) => {
           const image = getImage(item.images)
           return (
-            <div tw="w-full  h-auto">
+            <div key={index} tw="w-full  h-auto">
               <Zoom tw="w-full h-auto">
                 <div tw="object-cover w-full h-auto hover:(opacity-50 transition-timing-function[linear] transition-duration[0.2s])">
                   <GatsbyImage image={image as IGatsbyImageData} alt="photo" />

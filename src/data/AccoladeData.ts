@@ -6,26 +6,26 @@ import { GiSpectacles } from "react-icons/gi"
 
 interface AccoladeDatainterface {
     name: string;
-    role: string;
+    title: string;
     icon: IconType;
 }
 
 const AccoladeData: AccoladeDatainterface[] = [
     {
-        name: "MARKETING EXCELLENCE AWARDS 2017",
-        role: "Excellence in Social Media Marketing",
+        name: "Accolade-1",
+        title: "Accolade-1 title",
         icon: FiTwitter
     }, {
-        name: "THE \"BIG IDEA\" COMPETITION 2017",
-        role: "Top 3 Team",
+        name: "Accolade-2",
+        title: "Accolade-2 title",
         icon: HiOutlineLightBulb
     }, {
-        name: "WATER SEVEN ART DIRECTORS CLUB AWARDS 2016",
-        role: "Finalist - Design",
+        name: "Accolade-3",
+        title: "Accolade-3 title",
         icon: BiPaint
     }, {
-        name: "YOUNG GUNS AWARD 2015",
-        role: "Finalist - Print \n Ad Finalist - Digital Campaign",
+        name: "Accolade-4",
+        title: "Accolade-4 title",
         icon: GiSpectacles
     }
 ];

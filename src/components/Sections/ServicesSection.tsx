@@ -14,11 +14,7 @@ const ServicesSection = () => {
         <div tw="mx-auto text-center text-white px-8 md:text-4xl text-3xl">
           WHAT I'M DOING
         </div>
-        <div tw="text-center text-white px-8">
-          I love what I do. I take great pride in what I do. And I can't do
-          something halfway, three-quarters, nine-tenths. If I'm going to do
-          something, I go all the way.
-        </div>
+        <div tw="text-center text-white px-8">"What you do"</div>
         <Zoom>
           <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[60vw] min-height[3px] min-width[60vw] background-color[aqua]"></div>
         </Zoom>

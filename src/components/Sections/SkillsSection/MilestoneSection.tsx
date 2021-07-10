@@ -4,25 +4,21 @@ import Zoom from "react-reveal/Zoom"
 import Flip from "react-reveal/Flip"
 import Rotate from "react-reveal/Rotate"
 import { MilestoneData } from "../../../data/MilestoneData"
-import { ProgressBarLine } from "react-progressbar-line"
 
 const MilestoneSection = () => {
   return (
     <div
-      tw="bg-redprimary min-height[60vh] sm:(flex flex-col) items-center justify-center pb-32"
+      tw="bg-redprimary min-height[60vh] sm:(flex flex-col) items-center justify-center pb-20 md:pb-40"
       id="knowledge"
     >
       <div tw="md:(pt-20 px-40) px-5 pt-10 space-y-6 text-center items-center ">
         <div tw="text-white md:text-4xl text-3xl">MILESTONES ACHIEVED</div>
-        <div tw="text-gray-400 italic">
-          My path has not been determined. I shall have more experiences and
-          pass many more milestones.
-        </div>
+        <div tw="text-gray-400 italic">"Milestone description"</div>
         <Zoom>
           <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[40px] min-height[3px] min-width[40px] background-color[aqua]"></div>
         </Zoom>
       </div>
-      <div tw="w-full grid gap-x-8 gap-y-20 grid-cols-2 sm:grid-cols-4 justify-items-center text-center items-center py-10 lg:px-32">
+      <div tw="w-full grid gap-x-8 gap-y-20 grid-cols-1 sm:(grid-cols-2 gap-y-40) justify-items-center text-center items-center py-10 lg:px-32">
         {MilestoneData.map((item, index) => (
           <div
             key={index}

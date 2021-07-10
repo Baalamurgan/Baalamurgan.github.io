@@ -1,8 +1,8 @@
 const ContactData = [
-    "Nick Berg",
-    "123 Water Seven, Grand Line",
-    "+123 456 7890",
-    "hello@nickberg.com",
-    "www.nickberg.com"
+    "Name of Client",
+    "Address",
+    "Phone number",
+    "Mail address",
+    "Website"
 ];
 export { ContactData };
