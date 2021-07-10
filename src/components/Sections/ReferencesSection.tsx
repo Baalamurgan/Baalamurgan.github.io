@@ -39,7 +39,7 @@ const ReferencesSection = () => {
                 tw="grid grid-cols-3 space-y-2 text-left text-white"
                 key={index}
               >
-                <img src={photo} height="2px" width="2px" />
+                <img src={photo} />
                 <div tw="flex flex-col col-span-2 px-10 space-y-3">
                   <div tw="text-2xl">{company}</div>
                   <div tw="max-height[6px] max-width[30px] min-height[6px] min-width[30px] background-color[aqua]"></div>
@@ -71,7 +71,7 @@ const ReferencesSection = () => {
             {ReferencesData.map(
               ({ photo, company, description, name, role }, index) => (
                 <div tw="grid space-y-2 text-center text-white" key={index}>
-                  <img src={photo} height="2px" width="2px" />
+                  <img src={photo} tw="w-full h-auto" />
                   <div tw="flex flex-col">
                     <div tw="">{company}</div>
                     <Zoom>

@@ -8,9 +8,9 @@ import RubberBand from "react-reveal/RubberBand"
 
 const Footer = () => {
   return (
-    <section tw="max-height[50vh] min-height[50vh] p-10 flex flex-col justify-center content-center bg-black text-gray-700">
+    <section tw="p-10 flex flex-col justify-center items-center bg-black text-gray-700">
       <RubberBand>
-        <ul tw="flex flex-wrap justify-center content-around text-black text-2xl">
+        <ul tw="flex flex-wrap  text-black text-2xl">
           <div tw="flex-initial">
             <a href="#">
               <li tw="bg-gray-600 hover:(bg-gray-400) p-3 m-2 rounded inline-block">

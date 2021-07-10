@@ -49,7 +49,7 @@ const ProfileSection = () => {
                 smooth={"easeInOutQuint"}
                 to="resume"
               >
-                <button tw="md:p-3 p-2 rounded bg-pink-600 text-black focus:outline-none hover:(bg-green-500 text-white transition-duration[0.2s])">
+                <button tw="md:p-3 border-none p-2 rounded bg-pink-600 text-black focus:outline-none hover:(bg-green-500 text-white transition-duration[0.2s])">
                   RESUME
                 </button>
               </Link>

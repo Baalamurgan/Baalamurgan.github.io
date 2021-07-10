@@ -22,7 +22,7 @@ const PortfolioSection = () => {
         nodes {
           images {
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData(width: 600)
             }
           }
         }
@@ -42,13 +42,13 @@ const PortfolioSection = () => {
           <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[40px] min-height[3px] min-width[40px] background-color[aqua]"></div>
         </Zoom>
       </div>
-      <div tw="m-0 p-0 w-full grid md:(grid-cols-4 m-0 p-0) grid-cols-1 sm:(grid-cols-2 m-0 p-0) ">
+      <div tw=" w-full grid md:(grid-cols-4) sm:(grid-cols-2 ) ">
         {data.allPortfolioJson.nodes.map((item, index) => {
           const image = getImage(item.images)
           return (
-            <div tw="w-full p-0 m-0">
-              <Zoom>
-                <div tw="object-cover w-full hover:(opacity-50 transition-timing-function[linear] transition-duration[0.2s])">
+            <div tw="w-full  h-auto">
+              <Zoom tw="w-full h-auto">
+                <div tw="object-cover w-full h-auto hover:(opacity-50 transition-timing-function[linear] transition-duration[0.2s])">
                   <GatsbyImage image={image as IGatsbyImageData} alt="photo" />
                 </div>
               </Zoom>

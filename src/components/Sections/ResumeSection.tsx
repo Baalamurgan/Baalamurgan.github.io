@@ -44,7 +44,7 @@ const ResumeSection = () => {
               <div tw="hidden md:(grid col-span-1 justify-items-start)">
                 <button
                   onClick={() => setView(!view)}
-                  tw="bg-gray-800 px-3 py-2 text-2xl rounded height[min-content] width[min-content]"
+                  tw="bg-gray-800 px-3 py-2 text-2xl border-none rounded height[min-content] width[min-content]"
                 >
                   {!view ? "+" : "-"}
                 </button>
@@ -90,7 +90,7 @@ const ResumeSection = () => {
               <div tw="hidden md:(grid col-span-1 justify-items-start)">
                 <button
                   onClick={() => setView(!view)}
-                  tw="bg-gray-800 px-3 py-2 text-2xl rounded height[min-content] width[min-content]"
+                  tw="bg-gray-800 px-3 py-2 border-none text-2xl rounded height[min-content] width[min-content]"
                 >
                   {!view ? "+" : "-"}
                 </button>

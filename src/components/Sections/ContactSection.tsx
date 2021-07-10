@@ -58,7 +58,7 @@ const ContactSection = () => {
                 tw="cursor-pointer overflow-x-visible"
                 href="mailto:someone@example.com"
               >
-                <button tw="bg-pink-700 w-full p-4 rounded text-white">
+                <button tw="bg-pink-700 w-full p-4 rounded border-none text-white">
                   SEND MESSAGE
                 </button>
               </a>

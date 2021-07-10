@@ -49,8 +49,8 @@ const Navbar: React.FC = () => {
       {/* mobile */}
       <div tw="lg:hidden flex fixed top-0 w-full py-3 px-4 min-height[10vh] justify-end text-white bg-black">
         <div tw="z-20 flex items-center text-center justify-center">
-          <button onClick={onclick} tw="lg:hidden">
-            <div tw="text-white text-3xl">
+          <button onClick={onclick} tw=" border-none lg:hidden">
+            <div tw="text-white text-3xl ">
               {!menu ? <FiMenu /> : <VscChromeClose />}
             </div>
           </button>
