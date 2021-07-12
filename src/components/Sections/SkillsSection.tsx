@@ -1,4 +1,5 @@
 import React from "react"
+import "twin.macro"
 import AccoladeSection from "./SkillsSection/AccoladeSection"
 import KnowledgeSection from "./SkillsSection/KnowledgeSection"
 import MilestoneSection from "./SkillsSection/MilestoneSection"
@@ -7,12 +8,9 @@ import WorkprocessSection from "./SkillsSection/Workprocess"
 
 const SkillsSection = () => {
   return (
-    <div>
+    <div tw="min-h-full bg-gradient-to-b from-green-500 via-green-300 to-yellow-500 ">
       <SkillSection />
       <KnowledgeSection />
-      <AccoladeSection />
-      <MilestoneSection />
-      <WorkprocessSection />
     </div>
   )
 }

@@ -18,12 +18,12 @@ import tw, { styled } from "twin.macro"
 const WorkprocessSection = () => {
   return (
     <div
-      tw="bg-redprimary min-height[60vh] items-center justify-center text-white"
+      tw="bg-primary min-height[60vh] items-center justify-center text-black"
       id="knowledge"
     >
       <div tw="md:(pt-20 px-40) px-5 pt-10 space-y-6 text-center items-center ">
-        <div tw="text-white md:text-4xl text-3xl">WORK PROCESS</div>
-        <div tw="text-gray-400 italic">"Work description"</div>
+        <div tw="text-black md:text-4xl text-3xl">WORK PROCESS</div>
+        <div tw="text-white italic">"Work description"</div>
         <Zoom>
           <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[40px] min-height[3px] min-width[40px] background-color[aqua]"></div>
         </Zoom>

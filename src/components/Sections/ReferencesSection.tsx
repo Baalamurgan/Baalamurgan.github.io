@@ -8,16 +8,14 @@ import Zoom from "react-reveal/Zoom"
 const ReferencesSection = () => {
   return (
     <div
-      tw="bg-redprimary min-h-screen flex flex-col items-center"
+      tw="bg-primary min-h-screen flex flex-col items-center"
       id="references"
     >
       <div tw="md:(pt-28) px-5 pt-20 space-y-4 text-center max-w-2xl  items-center">
-        <div tw="mx-auto text-center text-white md:text-4xl text-3xl">
+        <div tw="mx-auto text-center text-black md:text-4xl text-3xl">
           REFERENCES
         </div>
-        <div tw="text-center text-gray-400 italic">
-          "References description"
-        </div>
+        <div tw="text-center text-white italic">"References description"</div>
         <Zoom>
           <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[20vw] min-height[3px] min-width[20vw] background-color[aqua]"></div>
         </Zoom>
@@ -36,7 +34,7 @@ const ReferencesSection = () => {
           {ReferencesData.map(
             ({ photo, company, description, name, role }, index) => (
               <div
-                tw="grid grid-cols-3 space-y-2 text-left text-white"
+                tw="grid grid-cols-3 space-y-2 text-left text-black"
                 key={index}
               >
                 <img src={photo} />
@@ -45,7 +43,7 @@ const ReferencesSection = () => {
                   <div tw="max-height[6px] max-width[30px] min-height[6px] min-width[30px] background-color[aqua]"></div>
                   <div tw="italic text-2xl">{description}</div>
                   <div tw="italic underline">{name}</div>
-                  <div tw="italic text-gray-400">{role}</div>
+                  <div tw="italic text-white">{role}</div>
                 </div>
               </div>
             )
@@ -69,7 +67,7 @@ const ReferencesSection = () => {
           >
             {ReferencesData.map(
               ({ photo, company, description, name, role }, index) => (
-                <div tw="grid space-y-2 text-center text-white" key={index}>
+                <div tw="grid space-y-2 text-center text-black" key={index}>
                   <img src={photo} />
                   <div tw="flex flex-col">
                     <div tw="">{company}</div>
@@ -78,7 +76,7 @@ const ReferencesSection = () => {
                     </Zoom>
                     <div tw="italic mx-auto">{description}</div>
                     <div tw="italic underline">{name}</div>
-                    <div tw="italic text-gray-400">{role}</div>
+                    <div tw="italic text-white">{role}</div>
                   </div>
                 </div>
               )

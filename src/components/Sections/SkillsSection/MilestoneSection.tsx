@@ -8,12 +8,12 @@ import { MilestoneData } from "../../../data/MilestoneData"
 const MilestoneSection = () => {
   return (
     <div
-      tw="bg-redprimary min-height[60vh] sm:(flex flex-col) items-center justify-center pb-20 md:pb-40"
+      tw="bg-primary min-height[60vh] sm:(flex flex-col) items-center justify-center pb-20 md:pb-40"
       id="knowledge"
     >
       <div tw="md:(pt-20 px-40) px-5 pt-10 space-y-6 text-center items-center ">
-        <div tw="text-white md:text-4xl text-3xl">MILESTONES ACHIEVED</div>
-        <div tw="text-gray-400 italic">"Milestone description"</div>
+        <div tw="text-black md:text-4xl text-3xl">MILESTONES ACHIEVED</div>
+        <div tw="text-white italic">"Milestone description"</div>
         <Zoom>
           <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[40px] min-height[3px] min-width[40px] background-color[aqua]"></div>
         </Zoom>
@@ -22,7 +22,7 @@ const MilestoneSection = () => {
         {MilestoneData.map((item, index) => (
           <div
             key={index}
-            tw="col-span-1 flex flex-col justify-center sm:(flex flex-wrap flex-row) text-center text-white lg:(max-height[7vh] max-width[7vw]) sm:(max-height[15vh] max-width[15vw]) max-height[30vh] max-width[30vw] whitespace-nowrap p-0"
+            tw="col-span-1 flex flex-col justify-center sm:(flex flex-wrap flex-row) text-center text-black lg:(max-height[7vh] max-width[7vw]) sm:(max-height[15vh] max-width[15vw]) max-height[30vh] max-width[30vw] whitespace-nowrap p-0"
           >
             <div tw="text-7xl sm:col-span-2 col-span-2 width[min-content] height[min-content] p-5 rounded-full bg-pink-600 ">
               <Rotate>

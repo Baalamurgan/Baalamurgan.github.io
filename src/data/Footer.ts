@@ -12,22 +12,16 @@ interface FooterDataInterface {
 const FooterData: FooterDataInterface[] = [
     {
         icon: FiFacebook,
-        link: "Link to Facebook"
+        link: "https://en-gb.facebook.com/baalamurgan.k.a"
     }, {
         icon: FiTwitter,
-        link: "Link to Twitter"
+        link: "https://twitter.com/baalamurgan"
     }, {
         icon: FaLinkedin,
-        link: "Link to LinkedIn"
-    }, {
-        icon: BiBasketball,
-        link: "Link to Dribbble"
+        link: "https://www.linkedin.com/in/baalamurgan/"
     }, {
         icon: FiInstagram,
-        link: "Link to Instagram"
-    }, {
-        icon: ImPinterest2,
-        link: "Link to Pinterest"
+        link: "https://www.instagram.com/baalamurgan"
     }
 ];
 

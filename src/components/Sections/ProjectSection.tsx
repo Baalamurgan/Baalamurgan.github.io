@@ -15,7 +15,7 @@ type dataType = {
     }[]
   }
 }
-const PortfolioSection = () => {
+const ProjectSection = () => {
   const data: dataType = useStaticQuery(graphql`
     query MyQuery {
       allPortfolioJson {
@@ -31,10 +31,10 @@ const PortfolioSection = () => {
   `)
 
   return (
-    <div tw="bg-redprimary" id="portfolio">
-      <div tw="md:(pt-28 px-40) px-5 pt-20 space-y-6 text-center items-center ">
-        <div tw="text-white md:text-4xl text-3xl">MY LATEST WORK</div>
-        <div tw="text-gray-400">"Explanation about your latest works"</div>
+    <div tw="bg-primary" id="project">
+      <div tw="md:(pt-28 px-40) px-5 pt-20 space-y-6 text-center items-center">
+        <div tw="text-black md:text-4xl text-3xl">MY LATEST WORK</div>
+        <div tw="text-white">"Explanation about your latest works"</div>
         <Zoom>
           <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[40px] min-height[3px] min-width[40px] background-color[aqua]"></div>
         </Zoom>
@@ -57,4 +57,4 @@ const PortfolioSection = () => {
   )
 }
 
-export default PortfolioSection
+export default ProjectSection
