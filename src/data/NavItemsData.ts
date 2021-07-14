@@ -1,8 +1,9 @@
+import { IconType } from "react-icons/lib";
 import { RiContactsBook2Line } from "react-icons/ri";
 import { TiHomeOutline } from "react-icons/ti";
 import { AiOutlineTeam, AiOutlineFundProjectionScreen } from "react-icons/ai";
-import { IconType } from "react-icons/lib";
 import { MdTimeline } from "react-icons/md"
+import { SiSkillshare } from "react-icons/si"
 
 interface NavItemsDatainterface {
   name: string;
@@ -30,7 +31,7 @@ const NavItemsData: NavItemsDatainterface[] = [
   }, {
     name: "SKILLS",
     link: "skills",
-    icon: TiHomeOutline,
+    icon: SiSkillshare,
   }, {
     name: "CONTACT",
     link: "contact",

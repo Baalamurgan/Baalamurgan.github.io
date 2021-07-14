@@ -5,23 +5,23 @@ interface SkillDatainterface {
 
 const SkillData: SkillDatainterface[] = [
     {
-        name: "Skill-1",
-        percent: 0,
+        name: "HTML CSS",
+        percent: 90,
     }, {
-        name: "Skill-2",
-        percent: 20,
+        name: "JS TS",
+        percent: 70,
     }, {
-        name: "Skill-3",
-        percent: 40,
+        name: "MERN",
+        percent: 70,
     }, {
-        name: "Skill-4",
-        percent: 60,
+        name: "Bootstrap TailwindCSS",
+        percent: 90,
     }, {
-        name: "Skill-5",
+        name: "PHP Mysql",
+        percent: 85,
+    }, {
+        name: "Python C/C++ Java",
         percent: 80,
-    }, {
-        name: "Skill-6",
-        percent: 100,
     }
 ];
 

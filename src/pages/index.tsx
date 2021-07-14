@@ -17,7 +17,7 @@ import Footer from "../components/Footer/Footer"
 const Index = () => {
   return (
     <Layout>
-      <Seo title="Portfolio" />
+      <Seo title="Baalamurgan" />
       <Element name="home" id="home" className="element">
         <HomePageSection />
       </Element>
@@ -39,7 +39,7 @@ const Index = () => {
         <KnowledgeSection />
       </Element> */}
       <Element name="skills" id="skills" className="element">
-        <SkillsSection />
+        <SkillSection />
       </Element>
       <Element name="contact" id="contact" className="element">
         <ContactSection />

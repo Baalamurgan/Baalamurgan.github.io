@@ -2,7 +2,7 @@ import React from "react"
 import "twin.macro"
 import RubberBand from "react-reveal/RubberBand"
 import { FooterData } from "../../data/Footer"
-import { Link } from "gatsby"
+import { FcCopyright } from "react-icons/fc"
 
 const Footer = () => {
   return (
@@ -11,20 +11,23 @@ const Footer = () => {
         <ul tw="flex flex-wrap flex-row justify-center items-center text-2xl p-0">
           {FooterData.map((item, index) => (
             <div key={index} tw="flex-initial">
-              <Link
-                to={item.link}
+              <a
+                href={item.link}
                 tw="flex flex-row justify-center place-content-center text-decoration[none] text-black"
               >
-                <li tw="bg-gray-600 hover:(bg-gray-400) p-3 m-2 rounded inline-block">
+                <li tw="bg-red-600 hover:(bg-black text-5xl transition-duration[0.3s]) p-3 m-2 rounded inline-block">
                   <item.icon />
                 </li>
-              </Link>
+              </a>
             </div>
           ))}
         </ul>
       </RubberBand>
       <div tw="flex justify-center content-center pb-5 md:pt-5 whitespace-nowrap">
-        © "Year" "Name". All rights reserved.
+        <div tw="text-2xl md:px-2 px-1">
+          <FcCopyright />
+        </div>
+        <div>2021 Baalamurgan. All rights reserved.</div>
       </div>
     </section>
   )

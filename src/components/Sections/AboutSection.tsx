@@ -17,17 +17,14 @@ const AboutSection = () => {
             HELLO, MY NAME IS Baalamurgan
           </div>
           <div tw="text-black">
-            19-year old college student who has fallen in developing websites
-            and web development. Born in Vellore and brought up in Chennai.
-            Highly motivated website developer and creative portfolio's
+            3rd year CSE student under-graduating B.Tech at VIT Chennai
+            University. Highly motivated in developing websites and learning
+            further.
           </div>
           <Zoom>
             <div tw="md:(max-height[6px] max-width[2vw] min-height[6px] min-width[2vw]) max-height[3px] max-width[60vw] min-height[3px] min-width[60vw] background-color[aqua]"></div>
           </Zoom>
-          <div>
-            I am currently undergoing UG in VIT Chennai college and I spend most
-            of the time building websites.
-          </div>
+          <div>Born in Vellore and brought up in Chennai</div>
           <div tw="grid grid-cols-2 p-1 xl:(p-2 px-16)">
             <div tw="text-black">
               CONTACT DETAILS:
