@@ -1,5 +1,6 @@
 import React from "react"
 import "twin.macro"
+import tw, { styled } from "twin.macro"
 import RubberBand from "react-reveal/RubberBand"
 import { FooterData } from "../../data/Footer"
 import { FcCopyright } from "react-icons/fc"
@@ -15,7 +16,12 @@ const Footer = () => {
                 href={item.link}
                 tw="flex flex-row justify-center place-content-center text-decoration[none] text-black"
               >
-                <li tw="bg-red-600 hover:(bg-black text-5xl transition-duration[0.3s]) p-3 m-2 rounded inline-block">
+                <li
+                  style={{
+                    color: item.hoverstyle,
+                  }}
+                  tw="inline-block transition-duration[0.15s] transition-timing-function[linear] lg:text-3xl bg-white hover:(bg-black border-2 border-white box-shadow[inset 0 0 10px white] border-solid rounded-full text-5xl p-5) p-3 m-2 rounded"
+                >
                   <item.icon />
                 </li>
               </a>

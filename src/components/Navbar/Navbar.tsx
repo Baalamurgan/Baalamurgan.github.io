@@ -29,7 +29,11 @@ const Active = styled(Link)`
   }
 `
 const MobActive = styled(Link)`
-  ${tw`active:(text-black bg-black)`}
+  &.active {
+    border-bottom: 3px solid white;
+    color: chartreuse;
+    transition: border-width 1s linear;
+  }
 `
 
 const Navbar: React.FC = () => {
@@ -48,10 +52,10 @@ const Navbar: React.FC = () => {
               to={item.link}
               activeClass="active"
               spy={true}
-              tw="color[aqua] cursor-pointer"
+              tw="color[aqua] cursor-pointer overflow-x-visible"
               smooth={"easeInOutQuint"}
             >
-              <p tw=" p-2 rounded-3xl md:inline-flex items-center ">
+              <p tw="p-2 rounded-3xl md:inline-flex items-center">
                 <div tw="text-2xl pr-1">
                   <item.icon />
                 </div>
@@ -65,7 +69,7 @@ const Navbar: React.FC = () => {
       {/* mobile */}
       <div tw="lg:hidden flex fixed top-0 w-full py-3 px-4 min-height[10vh] justify-end text-black bg-black">
         <div tw="z-20 flex items-center text-center justify-center">
-          <button onClick={onclick} tw=" border-none lg:hidden">
+          <button onClick={onclick} tw="cursor-pointer border-none lg:hidden">
             <div tw="text-3xl" css={!menu ? tw`text-white` : tw`text-black`}>
               {!menu ? <FiMenu /> : <VscChromeClose />}
             </div>
@@ -80,9 +84,10 @@ const Navbar: React.FC = () => {
               <MobActive
                 activeClass="active"
                 onClick={onclick}
-                tw=" active:bg-black cursor-pointer"
+                tw="bg-black  cursor-pointer"
                 smooth={"easeInOutQuint"}
                 to={item.link}
+                spy={true}
               >
                 <div tw="text-2xl pr-1 hover:(animate-bounce)">
                   <item.icon />

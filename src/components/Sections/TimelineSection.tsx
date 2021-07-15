@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import tw from "twin.macro"
-import { ResumeEducationData } from "../../data/ResumeData"
-import { ResumeWorkData } from "../../data/ResumeData"
+import { TimelineEducationData } from "../../data/TimelineData"
 import Bounce from "react-reveal/Bounce"
 import Wobble from "react-reveal/Wobble"
 
@@ -18,9 +17,9 @@ const TimelineSection = () => {
       <div tw="max-w-2xl xl:(max-w-full px-72 py-5) sm:pt-10  text-black">
         <div tw="text-2xl sm:text-center md:text-left p-4">
           <p>MY EDUCATION</p>
-          <p>"Education year from-to"</p>
+          <p>2015-2023</p>
         </div>
-        {ResumeEducationData.map((item, index) => {
+        {TimelineEducationData.map((item, index) => {
           const [view, setView] = useState(index === 0 ? true : false)
 
           return (
@@ -41,65 +40,18 @@ const TimelineSection = () => {
               <div tw="hidden md:(grid col-span-1 justify-items-start)">
                 <button
                   onClick={() => setView(!view)}
-                  tw="bg-gray-800 px-3 py-2 text-2xl border-none cursor-pointer rounded height[min-content] width[min-content]"
+                  tw="bg-gray-800 text-white px-3 py-2 text-2xl border-none cursor-pointer rounded height[min-content] width[min-content]"
                 >
                   {!view ? "+" : "-"}
                 </button>
               </div>
-              <div tw="col-span-8 border-2 border-solid border-white mb-5 justify-items-start">
+              <div tw="col-span-8 border-2 border-solid border-black mb-5 justify-items-start">
                 <div tw="text-left flex flex-col p-4 space-y-3 mt-2">
                   <Bounce cascade>
                     <div tw="lg:text-2xl">{item.title}</div>
                     <div
                       css={[view ? tw`` : tw`md:hidden`]}
-                      tw="color[#A1A1A1] text-sm"
-                    >
-                      {item.description}
-                    </div>
-                  </Bounce>
-                </div>
-              </div>
-            </div>
-          )
-        })}
-
-        <div tw="text-2xl sm:text-center md:text-left p-4">
-          <p>WORK EXPERIENCE</p>
-          <p>"Work experience year from-to"</p>
-        </div>
-        {ResumeWorkData.map((item, index) => {
-          const [view, setView] = useState(index === 0 ? true : false)
-
-          return (
-            <div
-              key={index}
-              tw="flex-grow text-center px-5 md:(grid grid-cols-12 gap-5)"
-            >
-              <div tw="relative top-3 md:hidden">
-                <Wobble>
-                  <span tw="col-span-3 background-color[#C80A48] height[40px] whitespace-nowrap rounded px-4 py-2 justify-items-center">
-                    {item.year}
-                  </span>
-                </Wobble>
-              </div>
-              <div tw="hidden md:( visible grid col-span-3 background-color[#C80A48] height[40px] width[min-content] whitespace-nowrap rounded px-4 py-2 justify-items-start)">
-                <Wobble>{item.year}</Wobble>
-              </div>
-              <div tw="hidden md:(grid col-span-1 justify-items-start)">
-                <button
-                  onClick={() => setView(!view)}
-                  tw="bg-gray-800 px-3 py-2 text-2xl border-none cursor-pointer rounded height[min-content] width[min-content]"
-                >
-                  {!view ? "+" : "-"}
-                </button>
-              </div>
-              <div tw="col-span-8 border-2 border-solid border-white mb-5 justify-items-start">
-                <div tw="text-left flex flex-col p-4 space-y-3 mt-2">
-                  <Bounce cascade>
-                    <div tw="lg:text-2xl">{item.title}</div>
-                    <div
-                      css={[view ? tw`` : tw`md:hidden`]}
-                      tw="color[#A1A1A1] text-sm"
+                      tw="text-sm md:text-3xl"
                     >
                       {item.description}
                     </div>

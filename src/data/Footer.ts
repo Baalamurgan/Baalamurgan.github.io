@@ -1,8 +1,6 @@
 import { IconType } from "react-icons/lib";
-import { FiTwitter, FiFacebook, FiInstagram } from "react-icons/fi"
-import { ImPinterest2 } from "react-icons/im"
-import { FaLinkedin } from "react-icons/fa"
-import { BiBasketball } from "react-icons/bi"
+import { FaLinkedin, FaFacebookSquare, FaTwitter } from "react-icons/fa"
+import { AiFillInstagram } from "react-icons/ai"
 
 interface FooterDataInterface {
     icon: IconType
@@ -12,20 +10,20 @@ interface FooterDataInterface {
 
 const FooterData: FooterDataInterface[] = [
     {
-        icon: FiFacebook,
-        hoverstyle: "backblue",
+        icon: FaFacebookSquare,
+        hoverstyle: "#4267B2",
         link: "https://en-gb.facebook.com/baalamurgan.k.a"
     }, {
-        icon: FiTwitter,
-        hoverstyle: "aqua",
+        icon: FaTwitter,
+        hoverstyle: "#1DA1F2",
         link: "https://twitter.com/baalamurgan"
     }, {
         icon: FaLinkedin,
-        hoverstyle: "darkblue",
+        hoverstyle: "#2867B2",
         link: "https://www.linkedin.com/in/baalamurgan/"
     }, {
-        icon: FiInstagram,
-        hoverstyle: "background",
+        icon: AiFillInstagram,
+        hoverstyle: "#d6249f",
         link: "https://www.instagram.com/baalamurgan"
     }
 ];

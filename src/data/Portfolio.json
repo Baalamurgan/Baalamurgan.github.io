@@ -1,26 +1,20 @@
 [
   {
-    "images": "../images/portrait1.png"
+    "images": "../images/tshirts.png",
+    "title": "T-shirts",
+    "demolink": "",
+    "codelink": "https://github.com/Baalamurgan/T-shirts"
   },
   {
-    "images": "../images/portrait1.png"
+    "images": "../images/bank.png",
+    "title": "Simple banking system",
+    "demolink": "",
+    "codelink": "https://github.com/Baalamurgan/TSF-Bank"
   },
   {
-    "images": "../images/portrait1.png"
-  },
-  {
-    "images": "../images/portrait1.png"
-  },
-  {
-    "images": "../images/portrait1.png"
-  },
-  {
-    "images": "../images/portrait1.png"
-  },
-  {
-    "images": "../images/portrait1.png"
-  },
-  {
-    "images": "../images/portrait1.png"
+    "images": "../images/railway.jpg",
+    "title": "Railway resevation system",
+    "demolink": "",
+    "codelink": "https://github.com/Baalamurgan/Railway-Reservation-System"
   }
 ]
