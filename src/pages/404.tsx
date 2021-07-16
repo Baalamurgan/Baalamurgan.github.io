@@ -1,8 +1,9 @@
 import * as React from "react"
 import { graphql, PageProps } from "gatsby"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import "twin.macro"
+import "../styles/ErrorPage.css"
 
 type DataProps = {
   site: {
@@ -17,9 +18,18 @@ const NotFoundPage: React.FC<PageProps<DataProps>> = ({ data }) => {
 
   return (
     <Layout>
-      <Seo title="404: Not Found" />
-      <h1>404: Not Found</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      <Seo title="Not Found" />
+      <div id="notfound">
+        <div className="notfound">
+          <div className="notfound-404">
+            <h1>404</h1>
+            <h2>Page not found</h2>
+          </div>
+          <a tw="cursor-pointer" href="/">
+            Homepage
+          </a>
+        </div>
+      </div>
     </Layout>
   )
 }

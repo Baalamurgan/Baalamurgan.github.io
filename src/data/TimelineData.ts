@@ -8,7 +8,7 @@ const TimelineEducationData: TimelineEducationDatainterface[] = [
     {
         year: "2019 - 2023",
         title: "B.Tech(CSE)",
-        description: "Vellore Institute of Technology(Chennai). CGPA:8.6",
+        description: "VIT(Chennai). CGPA: 8.6",
     }, {
         year: "2017 - 2019",
         title: "12th",
@@ -17,7 +17,7 @@ const TimelineEducationData: TimelineEducationDatainterface[] = [
     {
         year: "2015 - 2017",
         title: "10th",
-        description: "Chettinad Vidyashram. CGPA:9.8",
+        description: "Chettinad Vidyashram. CGPA: 9.8",
     },
 ];
 

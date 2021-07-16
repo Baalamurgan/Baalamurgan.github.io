@@ -3,7 +3,7 @@ import "twin.macro"
 import Zoom from "react-reveal/Zoom"
 import Flip from "react-reveal/Flip"
 import Rotate from "react-reveal/Rotate"
-import { SkillData } from "../../../data/SkillData"
+import { SkillData } from "../../data/SkillData"
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar"
 import "react-circular-progressbar/dist/styles.css"
 
@@ -16,7 +16,7 @@ const SkillSection = () => {
         </div>
         <div tw="text-white italic">On progress</div>
         <Zoom>
-          <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[20vw] min-height[3px] min-width[20vw] background-color[chartreuse]"></div>
+          <div tw="mx-auto width[10vw] height[0.7vh]background-color[chartreuse]"></div>
         </Zoom>
       </div>
       <div tw="self-center lg:max-w-7xl w-full grid lg:(grid-cols-6 gap-x-2) md:(grid-cols-3 gap-5 pr-5) sm:(grid-cols-2 gap-5) gap-3 justify-items-center py-10">
@@ -26,7 +26,7 @@ const SkillSection = () => {
             className="group"
             tw="mx-auto flex flex-col items-center"
           >
-            <div tw="p-0 group-hover:(animate-pulse opacity-100) width[40vw] lg:width[10vw] md:width[10vw] sm:width[15vw]">
+            <div tw="z-40 p-0 group-hover:(animate-bounce) width[40vw] lg:width[10vw] md:width[10vw] sm:width[15vw]">
               <Rotate>
                 <CircularProgressbar
                   value={item.percent}
@@ -43,7 +43,7 @@ const SkillSection = () => {
             </div>
             <div>
               <Flip left cascade>
-                <div tw="group-hover:(color[yellow]) py-2 text-center word-wrap[break-word] text-2xl text-white">
+                <div tw="z-50 group-hover:(color[yellow]) py-2 text-center word-wrap[break-word] text-2xl text-white">
                   {item.name}
                 </div>
               </Flip>

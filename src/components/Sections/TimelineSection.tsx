@@ -12,7 +12,7 @@ const TimelineSection = () => {
           MY JOURNEY
         </div>
         <div tw="text-center text-white">Contains my 8 years of Education</div>
-        <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[60vw] min-height[3px] min-width[60vw] background-color[chartreuse]"></div>
+        <div tw="mx-auto width[10vw] height[0.7vh] background-color[chartreuse]"></div>
       </div>
       <div tw="max-w-2xl xl:(min-w-full px-72 py-5) sm:pt-10  text-white">
         <div tw="text-2xl sm:text-center md:text-left p-4">
@@ -25,6 +25,7 @@ const TimelineSection = () => {
           return (
             <div
               key={index}
+              className="group"
               tw="flex-grow text-center px-5 md:(grid grid-cols-12 gap-5) hover:(text-2xl)"
             >
               <div tw="relative top-3 md:hidden">
@@ -34,25 +35,38 @@ const TimelineSection = () => {
                   </span>
                 </Wobble>
               </div>
-              <div tw="hidden md:( visible grid col-span-3 background-color[#C80A48] height[40px] width[min-content] whitespace-nowrap rounded px-4 py-2 justify-items-start)">
+              <div tw="hidden md:(group-hover:(pb-10) visible grid col-span-3 background-color[#C80A48] height[40px] width[min-content] whitespace-nowrap rounded px-4 py-2 justify-items-start)">
                 <Wobble>{item.year}</Wobble>
               </div>
               <div tw="hidden md:(grid col-span-1 justify-items-start)">
                 <button
                   onClick={() => setView(!view)}
                   css={[view ? tw`bg-red-500 px-4` : tw`bg-green-500 px-3`]}
-                  tw="text-white py-2 text-2xl border-none cursor-pointer rounded height[min-content] width[min-content]"
+                  tw="py-2 text-2xl border-none cursor-pointer rounded height[min-content] width[min-content]"
                 >
                   {!view ? "+" : "-"}
                 </button>
               </div>
-              <div tw="col-span-8 border-2 border-solid border-white mb-5 justify-items-start">
+              <div tw="hidden md:(grid col-span-8 border-2 border-solid border-white md:w-full width[70vw] mb-5 justify-items-start)">
                 <div tw="text-left flex flex-col p-4 space-y-3 mt-2">
                   <Bounce cascade>
                     <div tw="lg:text-2xl">{item.title}</div>
                     <div
-                      css={[view ? tw`` : tw`md:hidden`]}
-                      tw="text-sm md:text-3xl"
+                      css={[view ? tw`` : tw`hidden`]}
+                      tw="group-hover:text-3xl"
+                    >
+                      {item.description}
+                    </div>
+                  </Bounce>
+                </div>
+              </div>
+              <div tw="md:hidden grid col-span-8 border-2 border-solid border-white md:w-full width[70vw] mb-5 justify-items-start">
+                <div tw="text-left flex flex-col p-4 space-y-3 mt-2">
+                  <Bounce cascade>
+                    <div tw="lg:text-2xl">{item.title}</div>
+                    <div
+                      css={[view ? tw`hidden` : tw`hidden`]}
+                      tw="group-hover:grid md:text-3xl"
                     >
                       {item.description}
                     </div>

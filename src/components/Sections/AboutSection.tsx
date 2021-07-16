@@ -13,6 +13,13 @@ const AboutSection = () => {
     >
       <div tw="grid xl:grid-cols-2">
         <div tw="flex flex-col gap-5 max-w-4xl xl:(pl-52 pt-40 pr-20) lg:min-h-screen sm:(p-20 pb-10) px-5 py-20 ">
+          <div tw="xl:hidden width[60vw] sm:width[30vw] flex items-center justify-self-start">
+            <StaticImage
+              placeholder="blurred"
+              src="../../images/Resume-photo.png"
+              alt="profile"
+            />
+          </div>
           <div tw="text-black md:text-4xl text-3xl">
             HELLO, MY NAME IS Baalamurgan
           </div>
@@ -50,7 +57,7 @@ const AboutSection = () => {
                   download="Baalamurgan-Resume.pdf"
                   target="_blank"
                 >
-                  <button tw="md:(text-2xl p-3) cursor-pointer border-none p-2 rounded bg-pink-600 text-black focus:outline-none transition-duration[0.2s] hover:(text-green-400 bg-pink-600 md:bg-black)">
+                  <button tw="md:(p-3) cursor-pointer border-none p-2 rounded bg-pink-600 text-black focus:outline-none transition-duration[0.2s] hover:(text-green-400 bg-pink-600 md:bg-black)">
                     Resume
                   </button>
                 </a>
@@ -58,7 +65,7 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-        <div tw="xl:(p-10 m-auto grid items-center justify-center) display[none]">
+        <div tw="xl:(p-10 m-auto grid items-center justify-center) hidden">
           <StaticImage
             placeholder="blurred"
             src="../../images/portrait.png"

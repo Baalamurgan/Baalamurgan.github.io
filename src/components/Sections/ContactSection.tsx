@@ -16,7 +16,7 @@ const Mailto = ({ name = "", subject = "", body = "", children }) => {
   var badmessage = new Array("fuck", "suck", "bitch")
   var badmsgdisplay = new Array("f**k", "s**k", "b**ch", "sample", "test")
   for (let i = 0; i < badname.length; i++) {
-    if (name.includes(badname[i]))
+    if (name.toLowerCase().includes(badname[i]))
       return (
         <button
           disabled
@@ -26,7 +26,7 @@ const Mailto = ({ name = "", subject = "", body = "", children }) => {
           <span tw="text-decoration[line-through]">"{badmsgdisplay[i]}"</span>
         </button>
       )
-    else if (subject.includes(badsubject[i]))
+    else if (subject.toLowerCase().includes(badsubject[i]))
       return (
         <button
           disabled
@@ -36,7 +36,7 @@ const Mailto = ({ name = "", subject = "", body = "", children }) => {
           <span tw="text-decoration[line-through]">"{badmsgdisplay[i]}"</span>
         </button>
       )
-    else if (body.includes(badmessage[i]))
+    else if (body.toLowerCase().includes(badmessage[i]))
       return (
         <button
           disabled
@@ -80,17 +80,17 @@ const ContactSection = () => {
     setMail({ ...mail, [name]: event.target.value })
   }
   return (
-    <div tw="bg-primary min-h-screen flex flex-col items-center" id="contact">
+    <div tw="bg-black min-h-screen flex flex-col items-center" id="contact">
       <div tw="md:(pt-20) px-5 pt-20 space-y-4 text-center max-w-2xl items-center">
-        <div tw="mx-auto text-center text-black md:text-4xl text-3xl">
+        <div tw="mx-auto text-center text-white md:text-4xl text-3xl">
           CONTACT ME
         </div>
-        <div tw="text-center italic">Anything to discuss with</div>
+        <div tw="text-center text-white italic">Anything to discuss with</div>
         <Zoom>
-          <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[20vw] min-height[3px] min-width[20vw] background-color[chartreuse]"></div>
+          <div tw="mx-auto width[10vw] height[0.7vh] background-color[chartreuse]"></div>
         </Zoom>
       </div>
-      <div tw="min-width[90vw] grid lg:px-72 md:px-40 sm:px-20 px-4 pt-10">
+      <div tw="text-white min-width[90vw] grid lg:px-72 md:px-40 sm:px-20 px-4 pt-10">
         <form autoComplete="off">
           <div tw="focus-within:outline-none grid grid-cols-2 gap-4 w-full">
             <div tw="col-span-2">
@@ -130,7 +130,7 @@ const ContactSection = () => {
             <div tw="col-span-2 my-7">
               <Mailto name={name} subject={subject} body={message}>
                 <Flash>
-                  <div tw="col-span-2 border-4 border-solid border-green-400 cursor-pointer md:bg-pink-700 bg-black w-full p-4 rounded text-white hover:(text-green-500 bg-black)">
+                  <div tw="col-span-2 border-4 border-solid border-green-400 cursor-pointer md:bg-pink-700 bg-black w-full p-4 rounded text-white hover:(color[chartreuse] bg-black)">
                     SEND MESSAGE
                   </div>
                 </Flash>

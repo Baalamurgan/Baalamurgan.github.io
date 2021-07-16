@@ -48,7 +48,7 @@ const ProjectSection = () => {
         <div tw="text-white md:text-4xl text-3xl">MY LATEST WORK</div>
         <div tw="text-white">More yet to come😉</div>
         <Zoom>
-          <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[40px] min-height[3px] min-width[40px] background-color[chartreuse]"></div>
+          <div tw="mx-auto width[10vw] height[0.8vh] background-color[chartreuse]"></div>
         </Zoom>
       </div>
       <div tw="self-center place-content-center w-full md:(grid grid-flow-col)">
@@ -66,7 +66,7 @@ const ProjectSection = () => {
                           href={item.codelink}
                           target="_blank"
                           rel="noopener"
-                          tw="text-decoration[none] bg-gray-700 text-white font-bold p-2 rounded-full"
+                          tw="text-decoration[none] bg-white text-gray-600 border-4 border-solid border-gray-400 font-bold p-2 rounded hover:(border-gray-600 text-gray-400)"
                         >
                           Code
                         </a>
@@ -78,7 +78,7 @@ const ProjectSection = () => {
                           href={item.demolink}
                           target="_blank"
                           rel="noopener"
-                          tw="text-decoration[none] bg-pink-600 text-white font-bold p-2 rounded-full"
+                          tw="text-decoration[none] bg-white text-pink-600 border-4 border-solid border-pink-400 font-bold p-2 rounded hover:(border-pink-600 text-pink-400)"
                         >
                           Demo
                         </a>

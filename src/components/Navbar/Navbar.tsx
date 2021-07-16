@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
         <div
-          tw="z-10 fixed top-0 opacity-90 transition-duration[0.5s] rounded-b-3xl border-0 items-center text-center bg-primary w-full flex flex-col space-y-5 p-2"
+          tw="z-10 fixed top-0 opacity-90 transition-duration[0.25s] rounded-b-3xl border-0 items-center text-center bg-primary w-full flex flex-col space-y-5 p-2"
           css={[menu ? tw`right-0` : tw`-right-full`]}
         >
           {NavItemsData.map((item, index) => (
