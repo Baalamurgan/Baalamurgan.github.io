@@ -21,7 +21,7 @@ const HomePageSection = () => {
         <div tw="flex"></div>
         <Link
           activeClass="active"
-          tw="cursor-pointer text-center overflow-x-visible background-color[rgb(200, 10, 72)] rounded hover:(background-color[rgb(200, 10, 72)] md:bg-green-700 text-black) md:(text-lg max-width[204px] py-4 w-full) max-width[150px] py-3 w-full text-black font-bold"
+          tw="cursor-pointer text-center overflow-x-visible background-color[#EF6C98] rounded hover:(background-color[rgb(200, 10, 72)] md:bg-green-700 text-black) md:(text-lg max-width[204px] py-4 w-full) max-width[150px] py-3 w-full text-black font-bold"
           smooth={"easeInOutQuint"}
           to="about"
         >

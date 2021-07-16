@@ -2,19 +2,19 @@
   {
     "images": "../images/tshirts.png",
     "title": "T-shirts",
-    "demolink": "",
+    "demolink": "T-shirts.github.io",
     "codelink": "https://github.com/Baalamurgan/T-shirts"
   },
   {
     "images": "../images/bank.png",
     "title": "Simple banking system",
-    "demolink": "",
+    "demolink": "TSFBank.github.io",
     "codelink": "https://github.com/Baalamurgan/TSF-Bank"
   },
   {
     "images": "../images/railway.jpg",
     "title": "Railway resevation system",
-    "demolink": "",
+    "demolink": "TrainX.github.io",
     "codelink": "https://github.com/Baalamurgan/Railway-Reservation-System"
   }
 ]

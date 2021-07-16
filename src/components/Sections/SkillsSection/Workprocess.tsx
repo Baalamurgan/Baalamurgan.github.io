@@ -25,7 +25,7 @@ const WorkprocessSection = () => {
         <div tw="text-black md:text-4xl text-3xl">WORK PROCESS</div>
         <div tw="text-white italic">"Work description"</div>
         <Zoom>
-          <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[40px] min-height[3px] min-width[40px] background-color[aqua]"></div>
+          <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[40px] min-height[3px] min-width[40px] background-color[chartreuse]"></div>
         </Zoom>
       </div>
       <div tw="lg:(pt-10 px-40) md:px-20 px-5">

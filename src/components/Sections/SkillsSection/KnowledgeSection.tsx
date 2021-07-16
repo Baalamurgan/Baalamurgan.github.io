@@ -13,7 +13,7 @@ const KnowledgeSection = () => {
         <div tw="text-black md:text-4xl text-3xl">KNOWLEDGE</div>
         <div tw="text-white italic">"Knowledge description"</div>
         <Zoom>
-          <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[40px] min-height[3px] min-width[40px] background-color[aqua]"></div>
+          <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[40px] min-height[3px] min-width[40px] background-color[chartreuse]"></div>
         </Zoom>
       </div>
       <div tw="grid sm:grid-cols-2 justify-items-center gap-0 pl-0 md:(w-full gap-14) text-center items-center py-10">

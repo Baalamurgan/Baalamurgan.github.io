@@ -14,6 +14,7 @@ const Mailto = ({ name = "", subject = "", body = "", children }) => {
   var badname = new Array("fuck", "suck", "bitch", "sample", "test")
   var badsubject = new Array("fuck", "suck", "bitch")
   var badmessage = new Array("fuck", "suck", "bitch")
+  var badmsgdisplay = new Array("f**k", "s**k", "b**ch", "sample", "test")
   for (let i = 0; i < badname.length; i++) {
     if (name.includes(badname[i]))
       return (
@@ -22,7 +23,7 @@ const Mailto = ({ name = "", subject = "", body = "", children }) => {
           tw="border-red-600 border-solid border-8 cursor-not-allowed text-center col-span-2 opacity-50 bg-red-700 w-full p-4 rounded text-white"
         >
           Please enter proper Name{" "}
-          <span tw="text-decoration[line-through]">"{badname[i]}"</span>
+          <span tw="text-decoration[line-through]">"{badmsgdisplay[i]}"</span>
         </button>
       )
     else if (subject.includes(badsubject[i]))
@@ -32,7 +33,7 @@ const Mailto = ({ name = "", subject = "", body = "", children }) => {
           tw="border-red-600 border-solid border-8 cursor-not-allowed text-center col-span-2 opacity-50 bg-red-700 w-full p-4 rounded text-white"
         >
           Please enter proper Subject{" "}
-          <span tw="text-decoration[line-through]">"{badsubject[i]}"</span>
+          <span tw="text-decoration[line-through]">"{badmsgdisplay[i]}"</span>
         </button>
       )
     else if (body.includes(badmessage[i]))
@@ -42,7 +43,7 @@ const Mailto = ({ name = "", subject = "", body = "", children }) => {
           tw="border-red-600 border-solid border-8 cursor-not-allowed text-center col-span-2 opacity-50 bg-red-700 w-full p-4 rounded text-white"
         >
           Please enter proper Message{" "}
-          <span tw="text-decoration[line-through]">"{badmessage[i]}"</span>
+          <span tw="text-decoration[line-through]">"{badmsgdisplay[i]}"</span>
         </button>
       )
   }
@@ -86,7 +87,7 @@ const ContactSection = () => {
         </div>
         <div tw="text-center italic">Anything to discuss with</div>
         <Zoom>
-          <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[20vw] min-height[3px] min-width[20vw] background-color[aqua]"></div>
+          <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[20vw] min-height[3px] min-width[20vw] background-color[chartreuse]"></div>
         </Zoom>
       </div>
       <div tw="min-width[90vw] grid lg:px-72 md:px-40 sm:px-20 px-4 pt-10">

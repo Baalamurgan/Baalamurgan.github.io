@@ -15,7 +15,7 @@ const MilestoneSection = () => {
         <div tw="text-black md:text-4xl text-3xl">MILESTONES ACHIEVED</div>
         <div tw="text-white italic">"Milestone description"</div>
         <Zoom>
-          <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[40px] min-height[3px] min-width[40px] background-color[aqua]"></div>
+          <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[40px] min-height[3px] min-width[40px] background-color[chartreuse]"></div>
         </Zoom>
       </div>
       <div tw="w-full grid gap-x-8 gap-y-20 grid-cols-1 sm:(grid-cols-2 gap-y-40) justify-items-center text-center items-center py-10 lg:px-32">

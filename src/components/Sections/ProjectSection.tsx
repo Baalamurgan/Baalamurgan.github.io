@@ -40,28 +40,32 @@ const ProjectSection = () => {
   `)
 
   return (
-    <div tw="bg-black lg:min-h-screen" id="project">
-      <div tw="md:(pt-28 px-40) px-5 pt-20 space-y-6 text-center items-center">
-        <div tw="text-black md:text-4xl text-3xl">MY LATEST WORK</div>
-        <div tw="text-white">"Explanation about your latest works"</div>
+    <div
+      tw="bg-black lg:min-height[100vh] flex flex-col justify-center items-center"
+      id="project"
+    >
+      <div tw="md:(pt-28 px-40 bg-gradient-to-b from-black) px-5 pt-20 bg-gradient-to-b from-white w-full space-y-6 text-center items-center">
+        <div tw="text-white md:text-4xl text-3xl">MY LATEST WORK</div>
+        <div tw="text-white">More yet to come😉</div>
         <Zoom>
-          <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[40px] min-height[3px] min-width[40px] background-color[aqua]"></div>
+          <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[40px] min-height[3px] min-width[40px] background-color[chartreuse]"></div>
         </Zoom>
       </div>
-      <div tw=" w-full grid grid-flow-col">
+      <div tw="self-center place-content-center w-full md:(grid grid-flow-col)">
         {data.allPortfolioJson.nodes.map((item, index) => {
           const image = getImage(item.images)
           return (
             <div className="group" key={index} tw="relative w-full h-auto">
               <Zoom tw="w-full h-auto">
-                <div tw="object-cover w-full h-auto hover:(transition-timing-function[linear] transition-duration[0.2s])">
+                <div tw="object-cover w-full h-auto transition-timing-function[linear] transition-duration[0.2s]">
                   <GatsbyImage image={image as IGatsbyImageData} alt="photo" />
-                  <div tw="absolute place-content-center w-full text-center transition-opacity duration-300 h-full top-0 bg-black bg-opacity-70 opacity-0 hidden group-hover:(opacity-100 grid)">
+                  <div tw="absolute place-content-center w-full text-center transition-property[opacity] duration-300 h-full top-0 bg-black bg-opacity-70 opacity-0 hidden group-hover:(opacity-100 grid)">
                     <div tw="place-self-center">
                       <Fade right>
                         <a
                           href={item.codelink}
                           target="_blank"
+                          rel="noopener"
                           tw="text-decoration[none] bg-gray-700 text-white font-bold p-2 rounded-full"
                         >
                           Code
@@ -73,6 +77,7 @@ const ProjectSection = () => {
                         <a
                           href={item.demolink}
                           target="_blank"
+                          rel="noopener"
                           tw="text-decoration[none] bg-pink-600 text-white font-bold p-2 rounded-full"
                         >
                           Demo
@@ -84,6 +89,11 @@ const ProjectSection = () => {
                         <div>{item.title}</div>
                       </Bounce>
                     </div>
+                  </div>
+                  <div tw="md:hidden text-center bg-white col-span-2 mb-2 place-self-center text-black">
+                    <Bounce>
+                      <div>{item.title}</div>
+                    </Bounce>
                   </div>
                 </div>
               </Zoom>

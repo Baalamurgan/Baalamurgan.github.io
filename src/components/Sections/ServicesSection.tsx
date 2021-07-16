@@ -13,7 +13,7 @@ const ServicesSection = () => {
         </div>
         <div tw="text-center text-black px-8">"What you do"</div>
         <Zoom>
-          <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[60vw] min-height[3px] min-width[60vw] background-color[aqua]"></div>
+          <div tw="mx-auto md:(max-height[6px] max-width[80px] min-height[6px] min-width[80px]) max-height[3px] max-width[60vw] min-height[3px] min-width[60vw] background-color[chartreuse]"></div>
         </Zoom>
       </div>
       <div tw="py-10 px-5 max-w-6xl text-black p-8 text-left grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
@@ -29,7 +29,7 @@ const ServicesSection = () => {
               <div tw="flex">
                 {index + 1}. {item.name}
               </div>
-              <div tw="md:(max-height[4px] max-width[30px] min-height[4px] min-width[30px]) max-height[3px] max-width[20px] min-height[3px] min-width[20px] background-color[aqua]"></div>
+              <div tw="md:(max-height[4px] max-width[30px] min-height[4px] min-width[30px]) max-height[3px] max-width[20px] min-height[3px] min-width[20px] background-color[chartreuse]"></div>
               <div tw="flex justify-center">{item.description}</div>
             </Bounce>
           </div>

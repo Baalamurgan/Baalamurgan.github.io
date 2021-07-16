@@ -69,14 +69,14 @@ const Navbar: React.FC = () => {
       {/* mobile */}
       <div tw="lg:hidden flex fixed top-0 w-full py-3 px-4 min-height[10vh] justify-end text-black bg-black">
         <div tw="z-20 flex items-center text-center justify-center">
-          <button onClick={onclick} tw="cursor-pointer border-none lg:hidden">
+          <div onClick={onclick} tw="cursor-pointer border-none lg:hidden">
             <div tw="text-3xl" css={!menu ? tw`text-white` : tw`text-black`}>
               {!menu ? <FiMenu /> : <VscChromeClose />}
             </div>
-          </button>
+          </div>
         </div>
         <div
-          tw="z-10 fixed top-0 opacity-90 transition-duration[0.5s] rounded-b-3xl border-0 items-center text-center bg-primary w-full flex flex-col space-y-2 p-2 "
+          tw="z-10 fixed top-0 opacity-90 transition-duration[0.5s] rounded-b-3xl border-0 items-center text-center bg-primary w-full flex flex-col space-y-5 p-2"
           css={[menu ? tw`right-0` : tw`-right-full`]}
         >
           {NavItemsData.map((item, index) => (
